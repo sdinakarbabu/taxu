@@ -1,0 +1,32 @@
+.greetingBox{
+    animation-duration: 5s;
+    animation-name: text;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+.greetingText{
+    text-align: center;
+    font-size: 95px;
+    margin-top: 150px;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+  }
+  .greetingsDescription{
+    text-align: center;
+    letter-spacing: 20px;
+    margin-left: 15px;
+  }
+  @keyframes text {
+    0%{
+     opacity: 0;
+    }
+    50%{
+     opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+  }

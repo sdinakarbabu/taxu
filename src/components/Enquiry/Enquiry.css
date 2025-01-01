@@ -1,0 +1,48 @@
+.EnquiryContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.enquiryBlock{
+    height: 330px;
+    width: 250px;
+    background-color: transparent;
+    border: 3px solid rgb(23, 23, 151);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 120px 60px 0 70px;
+}
+.enquiryDescription{
+    font-size: 12px;
+    margin-top: -80px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.img-expert{
+    height: 350px;
+    border-radius: 50%;
+    mix-blend-mode: darken;
+    margin-top: -35px;
+}
+.img-expert2{
+    height: 180px;
+    margin-top: 65px;
+}
+.enquiryDescription2{
+    margin-top: 0px;
+}
+.BtnEnquiry{
+    margin: 0;
+    outline: none;
+    width: 160px;
+    height: 45px;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: rgb(91, 91, 254);
+}
