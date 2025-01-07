@@ -1,0 +1,30 @@
+.didYouKnowSection{
+    /* background-color: aqua; */
+    margin: 35px 20em;
+}
+.didYouKnowHeading{
+    font-size: 45px;
+    text-align: center;
+    /* background-color: bisque; */
+    margin: 3px 0;
+    letter-spacing: 5px;
+}
+.didYouKnowBlock{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    padding: 20px 30px;
+    /* margin-top: -20px; */
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+.didYouKnowImage{
+    height: 180px;
+}
+.didYouKnowDescription{
+    font-size: 18px;
+    width: 550px;
+
+}
