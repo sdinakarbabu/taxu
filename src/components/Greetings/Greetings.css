@@ -3,6 +3,7 @@
     animation-name: text;
     animation-iteration-count: 1;
     opacity: 0;
+    height: 100vh;
 }
 .greetingText{
     text-align: center;

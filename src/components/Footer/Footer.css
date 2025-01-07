@@ -1,0 +1,19 @@
+.footerSection{
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-around;
+}
+.item-name{
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 23px;
+    margin-left: -15px;
+}
+.inner-eachItem{
+    list-style-type: none;
+    font-size: 20px;
+    margin: 10px 0 0 0px;
+}
+.inner-eachItem:hover{
+    color: blue;
+}
