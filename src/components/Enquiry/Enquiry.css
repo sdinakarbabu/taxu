@@ -4,8 +4,8 @@
     margin-top: 25px;
 }
 .enquiryBlock{
-    height: 330px;
-    width: 250px;
+    height: 380px;
+    width: 520px;
     background-color: transparent;
     border: 3px solid rgb(23, 23, 151);
     border-radius: 15px;
@@ -16,29 +16,39 @@
     padding: 10px;
     margin: 120px 60px 0 70px;
 }
-.enquiryDescription{
-    font-size: 12px;
+.enquiryHeading{
+    text-transform: uppercase;
     margin-top: -80px;
-    font-weight: bold;
-    margin-bottom: 2px;
+    font-size: 20px;
+    letter-spacing: 1.8px;
+}
+.enquiryDescription{
+    font-size: 18px;
+    margin-top: -20px;
+    margin: 2px 15px;
+    letter-spacing: 0.5px;
 }
 .img-expert{
     height: 350px;
     border-radius: 50%;
     mix-blend-mode: darken;
-    margin-top: -35px;
+    margin-top: -65px;
 }
 .img-expert2{
     height: 180px;
-    margin-top: 65px;
+    margin-top: 25px;
 }
-.enquiryDescription2{
+.enquiryHeading2{
     margin-top: 0px;
 }
+.enquiryDescription2{
+    margin: 0px 15px;
+}
+
 .BtnEnquiry{
     margin: 0;
     outline: none;
-    width: 160px;
+    width: 250px;
     height: 45px;
     border: none;
     color: #ffffff;

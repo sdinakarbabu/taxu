@@ -1,0 +1,39 @@
+.didYouKnowSection{
+    /* background-color: aqua; */
+    margin: 35px 20em;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 45px 25px;
+}
+.didYouKnowBlockLeft{
+}
+.didYouKnowHeading{
+    font-size: 45px;
+    /* background-color: bisque; */
+    margin: 3px 0;
+    letter-spacing: 7px;
+}
+
+.didYouKnowBlockRight{
+    width: 720px;
+    height: 350px;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+.didYouKnowImage{
+    height: 180px;
+}
+.didYouKnowDescription{
+    font-size: 18px;
+    width: 550px;
+
+}
+.choosePointsBlock{
+    font-size: 20px;
+}
+.eachChoosePoint{
+    list-style-type: none;
+    margin: 18px;
+    letter-spacing: 3px;
+}

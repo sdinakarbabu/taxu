@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import './Greetings.css'
 import Enquiry from '../Enquiry/Enquiry';
 import Footer from '../Footer/Footer';
-import DidYouKnow from '../DidYouKnow/DidYouKnow';
+import WhyToChoose from '../WhyToChoose/WhyToChoose';
+import WorkFlowTaxu from '../WorkFlowTaxu/WorkFlowTaxu';
+import InterestingFact from '../InterestingFact/InterestingFact';
 const Greetings=()=> {
     const [check,setCheck] = useState(true)
     useEffect(() => {
@@ -14,7 +16,7 @@ const Greetings=()=> {
     return (
         <>
             {(check)?<div className='greetingBox'><h1 className='greetingText'>Welcome !</h1>
-            <p className='greetingsDescription'>Smart Money moves</p></div>:<> <Enquiry /> <DidYouKnow/> <hr/> <Footer/><hr/></>}
+            <p className='greetingsDescription'>Smart Money moves</p></div>:<> <Enquiry /> <WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/> <hr/> <Footer/><hr/></>}
         </>
     )
  

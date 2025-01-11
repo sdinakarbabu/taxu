@@ -45,7 +45,7 @@ const data = [
                 name:"HUF Registration"
             },
             {
-                name:"Pancard Registration"
+                name:"Pancard"
             },
             {
                 name:"PF & ESI"
