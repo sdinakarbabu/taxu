@@ -1,8 +1,7 @@
 import React from 'react'
 import './WhyToChoose.css'
-import thinkingemoji from './thinkingemoji.png'
 const DidYouKnowData = {
-    image:thinkingemoji,
+    image:"thinkingemoji",
     description:"In FY 2023-24, 6.68% of the population filed Income Tax Returns (ITR), with 8 croce returns submitted. Over the past 5 years, the number of individuals declaring zero taxable income has varied, with 4.9 lakh filings in 2023-24."
 }
 const listPoints = [
@@ -28,7 +27,7 @@ const WhyToChoose = () => {
           </ul>
         </div>
         <div className='didYouKnowBlockRight'>
-            <img src={DidYouKnowData.image} alt='didYouKnow-image' className='didYouKnowImage'/>
+            {/* <img src='#' alt='didYouKnow-image' className='didYouKnowImage'/> */}
         </div>
     </section>
   )

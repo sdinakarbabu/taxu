@@ -9,7 +9,7 @@
 .didYouKnowBlockLeft{
 }
 .didYouKnowHeading{
-    font-size: 45px;
+    font-size: 48px;
     /* background-color: bisque; */
     margin: 3px 0;
     letter-spacing: 7px;
@@ -19,21 +19,18 @@
     width: 720px;
     height: 350px;
     border: 2px solid #000;
+    border: none;
     border-radius: 30px;
 }
 .didYouKnowImage{
     height: 180px;
 }
-.didYouKnowDescription{
-    font-size: 18px;
-    width: 550px;
 
-}
 .choosePointsBlock{
-    font-size: 20px;
+    font-size: 26px;
 }
 .eachChoosePoint{
     list-style-type: none;
     margin: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
