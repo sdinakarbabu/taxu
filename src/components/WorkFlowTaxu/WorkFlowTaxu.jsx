@@ -33,7 +33,7 @@ const workFlowData = [
 ]
 const WorkFlowTaxu = () => {
   return (
-    <section className='WorkFlowTaxuSection'>
+    <section className='WorkFlowTaxuSection' id='WorkFlowTaxuSection'>
         <h1 className='workFlowHeading'>How It works</h1>
         <p className='workFlowParagraph'>4 Simple-steps to e-file your <span>Income Tax Returns</span></p>
         <div className='flowOfProcessBlock'>

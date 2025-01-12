@@ -6,12 +6,12 @@ const Navbar = () => {
         <div className='part-1'> 
             <ul className='nav-items'>
                 <li className='item-headings'><p>Home</p></li>
-                <li className='item-headings'><p>Products</p></li>
+                <li className='item-headings' onClick={()=>window.location.href="#WorkFlowTaxuSection"}><p>Products</p></li>
             </ul>
         </div>
         <div className='part-2'>Taxu</div>
         <div className='part-3'>
-          <button className='reqBtn'>Get Started</button>
+          <button className='reqBtn' onClick={()=>window.location.href="#ContactFormSection"}>Get Started</button>
         </div>
     </section>
   )
