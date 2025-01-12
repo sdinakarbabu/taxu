@@ -3,14 +3,16 @@
 }
 .workFlowHeading{
     font-size: 48px;
+    font-family: "Nunito";
     text-align: center;
     letter-spacing: 8px;
     text-transform:uppercase;
 }
 .workFlowParagraph{
-    font-size: 35px;
+    font-size: 28px;
     margin-left: 25px;
-    /* font-weight: bold; */
+    font-family: "Roboto";
+    font-weight: 400;
 }
 .workFlowContainer{
     display: flex;
@@ -27,4 +29,13 @@
     height: 120px;
     padding-left: 50px;
     /* background-color: aqua; */
+}
+.listPointHead{
+    /* color: #ffffff; */
+    font-family: "Cinzel";
+    font-size: 21px;
+}
+.listPointdescription{
+    font-family: "Lato";
+    font-size: 16px;
 }

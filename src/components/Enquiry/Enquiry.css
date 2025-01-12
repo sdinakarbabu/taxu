@@ -9,12 +9,14 @@
 .mainQuoteHeading{
     text-align: center;
     font-size: 48px;
+    font-family: "Nunito";
     margin: 100px 5em 30px 5em;
 }
 .enquiryBlock{
     height: 300px;
     width: 520px;
-    background-color: transparent;
+    background-color: #ffffff;
+    /* filter: opacity(0.9); */
     border: 3px solid rgb(23, 23, 151);
     border-radius: 15px;
     display: flex;
@@ -23,6 +25,7 @@
     align-items: flex-start;
     padding: 10px;
     margin: 10px 60px 0 70px;
+    overflow: hidden;
 }
 .enquiryHeading{
     text-transform: uppercase;
@@ -78,4 +81,5 @@
     font-size: 15px;
     border-radius: 30px;
     background-color: rgb(91, 91, 254);
+    font-family: "Roboto Mono";
 }

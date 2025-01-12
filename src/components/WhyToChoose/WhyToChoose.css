@@ -1,10 +1,9 @@
 .didYouKnowSection{
     /* background-color: aqua; */
-    margin: 35px 20em;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    margin: 45px 25px;
+    margin: 45px 25px 30px 25px;
 }
 .didYouKnowBlockLeft{
 }
@@ -13,6 +12,7 @@
     /* background-color: bisque; */
     margin: 3px 0;
     letter-spacing: 7px;
+    font-family: "Nunito";
 }
 
 .didYouKnowBlockRight{
@@ -32,5 +32,6 @@
 .eachChoosePoint{
     list-style-type: none;
     margin: 18px;
+    font-family: "Lato";
     letter-spacing: 1px;
 }

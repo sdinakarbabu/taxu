@@ -8,11 +8,13 @@
     font-weight: bold;
     list-style-type: none;
     font-size: 23px;
+    font-family: "Cinzel";
     margin-left: -15px;
 }
 .inner-eachItem{
     list-style-type: none;
     font-size: 20px;
+    font-family: "Lato";
     margin: 10px 0 0 0px;
 }
 .inner-eachItem:hover{

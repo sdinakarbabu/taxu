@@ -1,13 +1,16 @@
 .InterestingFactSection{
     text-align: center;
    margin: 60px 180px;
+   font-family: "Nunito";
+
 }
 .InterestingFactHeading{
     font-size: 35px;
     letter-spacing: 5px;
+
 }
 .InterestingFactDescription{
     font-size: 23px;
     letter-spacing: 2px;
-    line-height: 40px
+    line-height: 40px;
 }
