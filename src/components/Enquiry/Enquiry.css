@@ -83,3 +83,138 @@
     background-color: rgb(91, 91, 254);
     font-family: "Roboto Mono";
 }
+@media screen and (min-width:300px) and (max-width:480px) {
+    .mainQuoteHeading{
+        text-align: center;
+        font-size: 26px;
+        font-family: "Nunito";
+        margin: 20% 5% 5% 10%;
+    }
+    .EnquiryContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .enquiryBlock{
+        height: 300px;
+        width:320px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 5px;
+    }
+    .enquiryHeading{
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1.8px;
+    }
+    .enquiryDescription{
+        font-size: 10px;
+        /* margin: 2px 15px; */
+        letter-spacing: 0.5px;
+        margin-bottom: 45px;
+    }
+    .img-expert{
+        height: 180px;
+        width: 150px;
+        border-radius: 50%;
+        mix-blend-mode: darken;
+        margin-top: -45px;
+        margin-right: 20em;
+    }
+    .img-expert2{
+        height: 60px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .flex-aliginleft{
+        width: 90%;
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    .flex-aliginleft2{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .enquiryHeading2{
+        margin-top: 20px;
+    }
+    .enquiryDescription2{
+        margin-bottom: 45px;
+        margin-right: 10px;
+    
+    }
+    
+    
+    
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .mainQuoteHeading{
+        text-align: center;
+        font-size: 26px;
+        font-family: "Nunito";
+        margin: 20% 5% 5% 10%;
+    }
+    .EnquiryContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .enquiryBlock{
+        height: 300px;
+        width:320px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 5px;
+    }
+    .enquiryHeading{
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1.8px;
+    }
+    .enquiryDescription{
+        font-size: 10px;
+        /* margin: 2px 15px; */
+        letter-spacing: 0.5px;
+        margin-bottom: 45px;
+    }
+    .img-expert{
+        height: 180px;
+        width: 150px;
+        border-radius: 50%;
+        mix-blend-mode: darken;
+        margin-top: -45px;
+        margin-right: 20em;
+    }
+    .img-expert2{
+        height: 60px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .flex-aliginleft{
+        width: 90%;
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    .flex-aliginleft2{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .enquiryHeading2{
+        margin-top: 20px;
+    }
+    .enquiryDescription2{
+        margin-bottom: 45px;
+        margin-right: 10px;
+    
+    }
+    
+}
+@media screen and (min-width:781px) and (max-width:1440px) {
+    
+}

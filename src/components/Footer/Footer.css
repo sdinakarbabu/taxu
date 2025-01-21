@@ -20,3 +20,26 @@
 .inner-eachItem:hover{
     color: blue;
 }
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .footerSection{
+        /* margin-top: 30px; */
+        display: flex;
+        flex-direction: column;
+    }
+    .item-name{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .inner-eachItem{
+        font-size: 12px;
+        margin: 10px 0 0 0px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    
+}
+@media screen and (min-width:781px) and (max-width:1440px) {
+    
+}

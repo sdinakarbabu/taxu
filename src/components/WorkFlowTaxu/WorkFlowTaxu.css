@@ -39,3 +39,45 @@
     font-family: "Lato";
     font-size: 16px;
 }
+@media screen and (min-width:300px) and (max-width:480px) {
+    .WorkFlowTaxuSection{
+        margin: 60px 18px;
+    }
+    .workFlowHeading{
+        font-size: 28px;
+    }
+    .workFlowParagraph{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+    .workFlowContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 35px;
+        margin: 60px 0;
+    }
+    .eachWorkFlowBlock{
+        list-style-type: none;
+    }
+    .eachLinkImageWorkFlow{
+        height: 40px;
+        padding-left: 50px;
+        /* background-color: aqua; */
+    }
+    .listPointHead{
+        /* color: #ffffff; */
+        font-family: "Cinzel";
+        font-size: 16px;
+    }
+    .listPointdescription{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    
+}
+@media screen and (min-width:781px) and (max-width:1440px) {
+    
+}

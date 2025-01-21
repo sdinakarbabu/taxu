@@ -35,3 +35,40 @@
     font-family: "Lato";
     letter-spacing: 1px;
 }
+@media screen and (min-width:300px) and (max-width:480px) {
+    .didYouKnowSection{
+        margin: 45px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .didYouKnowHeading{
+        font-size: 18px;
+    }
+    
+    .didYouKnowBlockRight{
+        width: 90%;
+        height: 350px;
+        border: 2px solid #000;
+        border: none;
+        border-radius: 30px;
+    }
+    .didYouKnowImage{
+        height: 180px;
+    }
+    
+    .choosePointsBlock{
+        font-size: 12px;
+    }
+    .eachChoosePoint{
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    
+}
+@media screen and (min-width:781px) and (max-width:1440px) {
+    
+}

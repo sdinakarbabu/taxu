@@ -16,7 +16,7 @@ const Greetings=()=> {
     }, []);
     return (
         <>
-            {(check)?<div className='greetingBox'><h1 className='greetingText'>Welcome !</h1>
+            {(check)?<div className='greetingBox'><h1 className='greetingText'>Welcome</h1>
             <p className='greetingsDescription'>Smart Money moves</p></div>:<> <Enquiry /> <WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/> <ContactForm/> <hr/> <Footer/><hr/></>}
         </>
     )

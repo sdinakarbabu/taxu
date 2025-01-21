@@ -14,3 +14,28 @@
     letter-spacing: 2px;
     line-height: 40px;
 }
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .InterestingFactSection{
+       margin: 60px 10px;
+    
+    }
+    .InterestingFactHeading{
+        font-size: 15px;
+        letter-spacing: 5px;
+    
+    }
+    .InterestingFactDescription{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    
+}
+@media screen and (min-width:781px) and (max-width:1440px) {
+    
+}

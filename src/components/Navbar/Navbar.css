@@ -60,7 +60,27 @@
 } */
 
 @media screen and (min-width:300px) and (max-width:480px) {
+    .part-1{
+        font-size: 12px;
+        /* background-color: beige; */
+        margin-left: -20px;
+    }
+    .part-2{
+        font-size: 35px;
+       letter-spacing: 8px;
+    }
+    .part-3{
+    }
     
+    .part-1 > .nav-items{
+        gap:6px;
+    }
+    .reqBtn{
+        width: 80px;
+        height: 25px;
+        font-size: 8px;
+        margin-right: -40px;
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
