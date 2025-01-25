@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 #ContactFormSection{
-    font-family: 'Poppins', sans-serif;
-    /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 15%;
 }
 .Language{
     width: 125px;
@@ -16,6 +19,7 @@
 .container{
   background: #fff;
   width: 100%;
+  height: 580px;
   padding: 25px 40px 10px 40px;
   border-radius: 25px;
   /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
@@ -52,6 +56,7 @@ form .form-row .textarea{
   width: 100%;
   height: 100%;
   border: none;
+  outline: none;
   font-size: 17px;
   border-bottom: 2px solid rgba(0,0,0, 0.12);
 }
@@ -101,7 +106,7 @@ form .form-row .textarea{
 }
 .submit-btn{
   height: 45px!important;
-  width: 25%!important;
+  width: 10%!important;
   background-color: rgb(91, 91, 254);
   outline: none;
   border: none;
@@ -132,6 +137,7 @@ form .form-row .textarea{
   }
   input,textarea{
     outline: none;
+    border: none;
     width: 100%;
   }
   .textarea label{

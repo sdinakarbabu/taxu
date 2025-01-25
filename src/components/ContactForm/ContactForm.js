@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './ContactForm.css'
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+    const {setChange,contactOn} = props
     const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
@@ -26,10 +27,16 @@ const ContactForm = () => {
             setResult(data.message);
         }
     };
+    const changeState = ()=>{
+        setChange(!contactOn)
+    }
   return (
-    <section id='ContactFormSection'>
+    <section id='ContactFormSection' style={(contactOn)?{zIndex:"100"}:{zIndex:"-100"}}>
     <div class="container">
-        <h1 class="text"> Contact us Form</h1>
+        <div style={{display:"flex", justifyContent:"space-between"}}>
+            <h1 class="text"> Contact us Form</h1>
+            <button type='button' style={{width:"45px",height:"25px", backgroundColor:"#fff",border:"none", fontSize:"18px"}} onClick={changeState}>Close</button>
+        </div>
         <form onSubmit={onSubmit}>
             <div class="form-row">
                 <div class="input-data">
