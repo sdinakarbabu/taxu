@@ -31,7 +31,7 @@ const ContactForm = (props) => {
         setChange(!contactOn)
     }
   return (
-    <section id='ContactFormSection' style={(contactOn)?{zIndex:"100"}:{zIndex:"-100"}}>
+    <section id='ContactFormSection' style={(contactOn)?{zIndex:"100",display:'block'}:{zIndex:"-100",display:'none'}}>
     <div class="container">
         <div style={{display:"flex", justifyContent:"space-between"}}>
             <h1 class="text"> Contact us Form</h1>
