@@ -1,40 +1,55 @@
 .InterestingFactSection{
     text-align: center;
-   margin: 60px 180px;
+    height: 70vh;
+   margin: 0 100px;
    font-family: "Nunito";
 
 }
 .InterestingFactHeading{
-    font-size: 35px;
+    font-size: 68px;
     letter-spacing: 5px;
 
 }
 .InterestingFactDescription{
-    font-size: 23px;
+    font-size: 35px;
     letter-spacing: 2px;
     line-height: 40px;
+    margin-top: 65px;
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {
     .InterestingFactSection{
-       margin: 60px 10px;
-    
+        height: 70vh;
+        margin: 0;
     }
     .InterestingFactHeading{
-        font-size: 15px;
-        letter-spacing: 5px;
+        font-size: 28px;
+        letter-spacing: 4px;
     
     }
     .InterestingFactDescription{
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 1px;
-        line-height: 20px;
+        line-height: 35px;
     }
     
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
+    .InterestingFactSection{
+        height: 70vh;
+        margin: 0;
+    }
+    .InterestingFactHeading{
+        font-size: 28px;
+        letter-spacing: 4px;
     
+    }
+    .InterestingFactDescription{
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
 }
 @media screen and (min-width:781px) and (max-width:1440px) {
     

@@ -1,22 +1,24 @@
-.EnquiryContainer{
-    display: flex;
-    justify-content: center;
-    /* margin-top: 25px; */
-}
+
 .EnquirySection{
     margin-top: 25px;
+    height: 100vh;
+    width: 100vw;
 }
 .mainQuoteHeading{
     text-align: center;
-    font-size: 48px;
+    font-size: 65px;
     font-family: "Nunito";
-    margin: 150px 5em 30px 5em;
+    margin: 16rem 5rem 30px 5rem;
+}
+.EnquiryContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
 }
 .enquiryBlock{
-    height: 300px;
-    width: 520px;
+    height: 350px;
+    width: 680px;
     background-color: #ffffff;
-    /* filter: opacity(0.9); */
     border: 3px solid rgb(23, 23, 151);
     border-radius: 15px;
     display: flex;
@@ -26,6 +28,7 @@
     padding: 10px;
     margin: 10px 60px 0 70px;
     overflow: hidden;
+    box-shadow: -15px 12px 15px gray;
 }
 .enquiryHeading{
     text-transform: uppercase;
@@ -36,6 +39,7 @@
 .enquiryDescription{
     font-size: 18px;
     /* margin: 2px 15px; */
+    margin-top: 25px;
     letter-spacing: 0.5px;
 }
 .img-expert{
@@ -59,16 +63,15 @@
     margin-top: -30px;
 }
 .flex-aliginleft2{
-    margin-top: 20px;
+    margin-top: 18px;
     margin-left: 50px;
 }
 .enquiryHeading2{
-    margin-top: 20px;
+    margin-top: 16px;
 }
-.enquiryDescription2{
-    margin-bottom: 45px;
+ .enquiryDescription2{
+    margin-bottom: 38px;
     margin-right: 10px;
-
 }
 
 .BtnEnquiry{
@@ -84,21 +87,25 @@
     font-family: "Roboto Mono";
 }
 @media screen and (min-width:300px) and (max-width:480px) {
+    .EnquirySection{
+        height: 150vh;
+    }
     .mainQuoteHeading{
         text-align: center;
-        font-size: 26px;
+        font-size: 35px;
         font-family: "Nunito";
-        margin: 20% 5% 5% 10%;
+        margin: 30% 5% 5% 10%;
     }
     .EnquiryContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100vw;
+        height: 100vh;
     }
     .enquiryBlock{
-        height: 300px;
-        width:320px;
+        width: 80%;
         display: flex;
         flex-direction: column;
         padding: 0px;
@@ -106,14 +113,12 @@
     }
     .enquiryHeading{
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 1.8px;
     }
     .enquiryDescription{
-        font-size: 10px;
-        /* margin: 2px 15px; */
-        letter-spacing: 0.5px;
-        margin-bottom: 45px;
+       font-size: 13px;
+       text-align: left;
     }
     .img-expert{
         height: 180px;
@@ -130,57 +135,37 @@
         margin-left: 50px;
     }
     .flex-aliginleft{
-        width: 90%;
-        margin-left: 50px;
-        margin-top: -30px;
+        height: 70%;
     }
     .flex-aliginleft2{
-        margin-top: 20px;
-        margin-left: 50px;
     }
     .enquiryHeading2{
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .enquiryDescription2{
-        margin-bottom: 45px;
+        margin-bottom: 10px;
         margin-right: 10px;
-    
     }
-    
     
     
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-    .mainQuoteHeading{
-        text-align: center;
-        font-size: 26px;
-        font-family: "Nunito";
-        margin: 20% 5% 5% 10%;
-    }
-    .EnquiryContainer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .enquiryBlock{
-        height: 300px;
-        width:320px;
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        margin: 5px;
-    }
+   .mainQuoteHeading{
+    font-size: 48px;
+   }
+   .enquiryBlock{
+    width: 780px;
+   }
     .enquiryHeading{
-        text-transform: uppercase;
         font-size: 12px;
-        letter-spacing: 1.8px;
     }
     .enquiryDescription{
-        font-size: 10px;
-        /* margin: 2px 15px; */
-        letter-spacing: 0.5px;
-        margin-bottom: 45px;
+        font-size: 8px;
+    }
+    .BtnEnquiry{
+        width: 120px;
+        height: 25px;
     }
     .img-expert{
         height: 180px;
@@ -197,23 +182,22 @@
         margin-left: 50px;
     }
     .flex-aliginleft{
+        float: left;
         width: 90%;
-        margin-left: 50px;
-        margin-top: -30px;
+        margin-left: 20px;
+        margin-top: -10px;
     }
     .flex-aliginleft2{
-        margin-top: 20px;
-        margin-left: 50px;
+        margin-top: 18px;
+        margin-left: 20px;
     }
     .enquiryHeading2{
-        margin-top: 20px;
+        margin-top: 16px;
     }
-    .enquiryDescription2{
-        margin-bottom: 45px;
+     .enquiryDescription2{
+        margin-bottom: 38px;
         margin-right: 10px;
-    
     }
-    
 }
 @media screen and (min-width:781px) and (max-width:1440px) {
     

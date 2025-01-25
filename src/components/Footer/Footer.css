@@ -26,19 +26,33 @@
         /* margin-top: 30px; */
         display: flex;
         flex-direction: column;
+        height: 120vh;
     }
     .item-name{
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 5px;
     }
     .inner-eachItem{
-        font-size: 12px;
+        font-size: 14px;
         margin: 10px 0 0 0px;
     }
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-    
+    .footerSection{
+        /* margin-top: 30px; */
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+    .item-name{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .inner-eachItem{
+        font-size: 14px;
+        margin: 10px 0 0 0px;
+    }
 }
 @media screen and (min-width:781px) and (max-width:1440px) {
     

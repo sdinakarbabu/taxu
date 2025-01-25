@@ -8,6 +8,7 @@
 .part-1{
     font-size: 18px;
     font-family: "Lato";
+    margin-top: 30px;
 
 }
 .part-2{
@@ -80,6 +81,7 @@
         height: 25px;
         font-size: 8px;
         margin-right: -40px;
+        margin-top: 23px;
     }
 }
 
