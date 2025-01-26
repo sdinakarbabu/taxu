@@ -19,7 +19,6 @@
 .workFlowContainer{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     gap: 35px;
     margin: 15vh 0 0 0;
     height: 50vh;
@@ -27,6 +26,7 @@
 }
 .eachWorkFlowBlock{
     list-style-type: none;
+    width: 380px;
 }
 .eachLinkImageWorkFlow{
     height: 95px;
@@ -95,13 +95,12 @@
     }
     .workFlowContainer{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 35px;
-        margin-top: 3rem;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .eachWorkFlowBlock{
         list-style-type: none;
+        width: 40%;
     }
     .eachLinkImageWorkFlow{
         height: 45px;
@@ -117,6 +116,38 @@
         font-size: 16px;
     }
 }
-@media screen and (min-width:781px) and (max-width:1440px) {
-    
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .WorkFlowTaxuSection{
+        height: 150vh;
+    }
+    .workFlowHeading{
+        font-size: 45px;
+    }
+    .workFlowParagraph{
+        font-size: 25px;
+        margin-left: 25px;
+        margin-top: 3rem;
+    }
+    .workFlowContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .eachWorkFlowBlock{
+        list-style-type: none;
+        width: 40%;
+    }
+    .eachLinkImageWorkFlow{
+        height: 75px;
+        padding-left: 50px;
+        /* background-color: aqua; */
+    }
+    .listPointHead{
+        /* color: #ffffff; */
+        font-family: "Cinzel";
+        font-size: 28px;
+    }
+    .listPointdescription{
+        font-size: 18px;
+    }
 }

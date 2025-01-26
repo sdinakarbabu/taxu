@@ -13,6 +13,7 @@
 .EnquiryContainer{
     display: flex;
     justify-content: center;
+    width: 100vw;
     margin-top: 6rem;
 }
 .enquiryBlock{
@@ -146,16 +147,20 @@
         margin-bottom: 10px;
         margin-right: 10px;
     }
-    
-    
+    .BtnEnquiry{
+        width: 120px;
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-   .mainQuoteHeading{
-    font-size: 48px;
+    .EnquirySection{
+        height: 150vh;
+    }
+    .mainQuoteHeading{
+        font-size: 48px;
    }
    .enquiryBlock{
-    width: 780px;
+        width: 40%;
    }
     .enquiryHeading{
         font-size: 12px;
@@ -199,6 +204,52 @@
         margin-right: 10px;
     }
 }
-@media screen and (min-width:781px) and (max-width:1440px) {
-    
+@media screen and (min-width:781px) and (max-width:1024px) {
+        .mainQuoteHeading{
+            font-size: 52px;
+        }
+       .enquiryBlock{
+            width: 35%;
+       }
+        .enquiryHeading{
+            font-size: 13px;
+        }
+        .enquiryDescription{
+            font-size: 12px;
+        }
+        .BtnEnquiry{
+            width: 140px;
+            height: 45px;
+        }
+        .img-expert{
+            height: 180px;
+            width: 150px;
+            border-radius: 50%;
+            mix-blend-mode: darken;
+            margin-top: -45px;
+            margin-right: 20em;
+        }
+        .img-expert2{
+            height: 60px;
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+        .flex-aliginleft{
+            float: left;
+            width: 90%;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        .flex-aliginleft2{
+            margin-top: 35px;
+            margin-left: 20px;
+        }
+        .enquiryHeading2{
+            margin-top: 16px;
+        }
+         .enquiryDescription2{
+            margin-bottom: 38px;
+            margin-right: 10px;
+        }
 }

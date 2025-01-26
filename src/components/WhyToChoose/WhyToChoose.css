@@ -97,6 +97,34 @@
         margin: 18px;
     }
 }
-@media screen and (min-width:781px) and (max-width:1440px) {
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .didYouKnowSection{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .didYouKnowHeading{
+        font-size: 48px;
+    }
     
+    .didYouKnowBlockRight{
+        width: 90%;
+        height: 350px;
+        border: 2px solid #000;
+        border: none;
+        border-radius: 30px;
+    }
+    .didYouKnowImage{
+        height: 180px;
+    }
+    
+    .choosePointsBlock{
+        font-size: 23px;
+        margin-top: 4rem;
+    }
+    .eachChoosePoint{
+        margin: 18px;
+    }
 }

@@ -26,6 +26,6 @@ You may also see any lint errors in the console.
 @media screen and (min-width:481px) and (max-width:780px) {
     
 }
-@media screen and (min-width:781px) and (max-width:1440px) {
+@media screen and (min-width:781px) and (max-width:1024px) {
     
 }

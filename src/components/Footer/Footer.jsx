@@ -81,11 +81,12 @@ const Footer = () => {
   return (
     <section className='footerSection'>
         {data.map((each)=>{
+            var count = 0;
             return(
                 <ul>
-                    <li className='item-name'>{each.name}</li>
+                    <li className='item-name' key={count++}>{each.name}</li>
                     <ul>
-                        {each.subList.map((eachInner)=><li className='inner-eachItem'>{eachInner.name}</li>)}
+                        {each.subList.map((eachInner)=><li className='inner-eachItem' key={count++}>{eachInner.name}</li>)}
                     </ul>
                 </ul>
             )
