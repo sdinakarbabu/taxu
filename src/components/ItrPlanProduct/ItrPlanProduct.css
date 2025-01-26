@@ -1,0 +1,57 @@
+.EachItrPlanContainer{
+    width: 30%;
+    height: 480px;
+    list-style-type: none;
+}
+.itrPlanHeading,.ItrPart-2{
+    border: 2px solid #000;
+    border-radius: 13px;
+    margin: 10px 0;
+}
+.itrPlanHeading{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.ItrPart-2{
+    padding: 15px 10px;
+    height: 80%;
+}
+.priceBlock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+.previousPrice{
+    text-decoration: line-through;
+
+}
+.discountPrice{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.coversBlock{
+    height: 65%;
+}
+.coversHeading{
+    font-size: 23px;
+}
+
+.eachCoverItemBlock{
+    display: flex;
+    gap: 5px;
+}
+.arrowImage{
+    height: 15px;
+}
+.productBtn{
+    background-color: #000;
+    color: #fff;
+    width: 180px;
+    height: 45px;
+    border-radius: 15px;
+    margin-left: 25%;
+}

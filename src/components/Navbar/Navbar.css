@@ -34,6 +34,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.item-headings:focus{
+    color: blue;
+}
 .item-headings:hover{
     color: blue;
 }

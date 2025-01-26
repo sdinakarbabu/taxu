@@ -1,0 +1,11 @@
+.itrPlanContainer{
+    margin: 15rem 0 15rem 0; /* margin size */ 
+}
+.itrPlansHeading{
+    text-align: center;
+}
+.itrFlexBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
