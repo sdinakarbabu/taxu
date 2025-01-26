@@ -29,7 +29,7 @@ const Enquiry = (props) => {
               <div className='flex-aliginleft2'>
                 <h1 className='enquiryHeading enquiryHeading2'>Start Exploring Services/Products</h1>
                 <p className='enquiryDescription enquiryDescription2'>Begin your journey towards financial freedom with our comprehensive offerings tailored just for you.</p>
-                <button className='BtnEnquiry' onClick={()=>window.location.href="#ContactFormSection"}>Explore   ➜</button>
+                <button className='BtnEnquiry' onClick={()=>window.location.href="/products"}>Explore   ➜</button>
               </div>
           </div>
         </div>
