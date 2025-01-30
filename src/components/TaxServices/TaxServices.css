@@ -30,9 +30,78 @@
     width: 220px;
     height: 45px;
     border: none;
-    color: #ffffff;
-    font-size: 15px;
     border-radius: 8px;
     background-color: rgb(91, 91, 254);
+}
+.taxserviceBtn>a{
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
     font-family: "Roboto Mono";
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .taxServicesContainer{
+        flex-direction: column;
+        height: 150vh;
+        gap: 50px;
+    }
+    .eachTaxBox{
+        width: 80%;
+        height: auto;
+    }
+    .taxserviceName{
+        font-size: 18px;
+    }
+    .taxserviceDescription{
+        font-size: 12px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .taxServicesContainer{
+        height: 100vh;
+        gap: 50px;
+    }
+    .eachTaxBox{
+        width: 40%;
+        height: 360px;
+    }
+    .taxserviceName{
+        font-size: 18px;
+    }
+    .taxserviceDescription{
+        font-size: 12px;
+        height: auto;
+    }
+    .taxserviceBtn{
+        width: 80%;
+    }
+    .taxserviceBtn>a{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .taxServicesContainer{
+        height: 100vh;
+        gap: 50px;
+    }
+    .eachTaxBox{
+        width: 40%;
+        height: 360px;
+    }
+    .taxserviceName{
+        font-size: 21px;
+    }
+    .taxserviceDescription{
+        font-size: 14px;
+        height: auto;
+    }
+    .taxserviceBtn{
+        width: 80%;
+    }
+    .taxserviceBtn>a{
+        font-size: 16px;
+    }
 }

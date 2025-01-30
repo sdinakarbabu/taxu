@@ -1,5 +1,5 @@
 .itrPlanContainer{
-    margin: 15rem 0 15rem 0; /* margin size */ 
+    margin: 1rem 0 3rem 0; /* margin size */ 
 }
 .itrPlansHeading{
     text-align: center;
@@ -8,4 +8,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
+}
+
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .itrFlexBlock{
+        gap: 12px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .itrFlexBlock{
+        gap: 14px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .itrFlexBlock{
+        gap: 16px;
+    }
 }

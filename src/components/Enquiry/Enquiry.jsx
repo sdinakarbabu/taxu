@@ -10,7 +10,7 @@ const Enquiry = (props) => {
   const {setChange,contactOn} = props
   const changeState = ()=>{
     setChange(!contactOn)
-}
+  }
   return (
     <>
     <section className='EnquirySection' id='EnquirySection'>
