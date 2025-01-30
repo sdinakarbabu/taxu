@@ -35,7 +35,7 @@ const ContactForm = (props) => {
         <div class="container">
             <div style={{display:"flex", justifyContent:"space-between"}}>
                 <h1 class="text"> Contact us Form</h1>
-                <button type='button' style={{width:"45px",height:"25px", backgroundColor:"#fff",border:"none"}} className='btnContact' onClick={changeState}>Close</button>
+                <button type='button' style={{width:"45px",height:"25px", backgroundColor:"transparent",border:"none"}} className='btnContact' onClick={changeState}>Close</button>
             </div>
             <form class="row g-3 needs-validation" novalidate onSubmit={onSubmit}>
                 <div class="col-md-4">

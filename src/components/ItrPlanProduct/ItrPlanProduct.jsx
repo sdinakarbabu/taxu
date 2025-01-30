@@ -4,7 +4,10 @@ import arrow from './arrow.png'
 
 
 const ItrPlanProduct = (props) => {
-  const {each} = props
+  const {each,changeStates} = props
+  const changingState = ()=>{
+    changeStates()
+  }
   return (
     <li className='EachItrPlanContainer'>
         <p className='itrPlanHeading'>{each.name}</p>
@@ -30,7 +33,7 @@ const ItrPlanProduct = (props) => {
                 
               </ul>
             </div>
-            <button className='productBtn'>{each.btnName}</button>
+            <button className='productBtn' onClick={changingState}>{each.btnName}</button>
         </div>
     </li>
   )

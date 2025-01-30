@@ -90,7 +90,7 @@ const Explore = () => {
           <h1 className='itrPlansHeading'>ITR Plans</h1>
           <ul className='itrFlexBlock'>
               {
-                itrPlaningData.map((each)=><ItrPlanProduct each={each}/>)
+                itrPlaningData.map((each)=><ItrPlanProduct each={each} changeStates={changeState}/>)
               }
               <li className='EachItrPlanContainer'>
                 <p className='itrPlanHeading'>Expert Assistance</p>
@@ -113,7 +113,7 @@ const Explore = () => {
           <h1 className='itrPlansHeading'>Business related services</h1>
           <ul className='itrFlexBlock'>
               {
-                itrPlaningData.map((each)=><ItrPlanProduct each={each}/>)
+                itrPlaningData.map((each)=><ItrPlanProduct each={each} changeStates={changeState}/>)
               }
               <li className='EachItrPlanContainer'>
                 <p className='itrPlanHeading'>Expert Assistance</p>
@@ -127,7 +127,7 @@ const Explore = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className='productBtn'>Connect Now</button>
+                    <button className='productBtn' onClick={changeState}>Connect Now</button>
                 </div>
               </li>
           </ul>
