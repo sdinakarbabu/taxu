@@ -5,8 +5,11 @@
 }
 .itrPlanHeading,.ItrPart-2{
     border: 2px solid #000;
-    border-radius: 13px;
+    border-radius: 20px;
     margin: 10px 0;
+}
+.ItrPart-2{
+    border-radius: 70px;
 }
 .itrPlanHeading{
     text-align: center;
@@ -24,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 20%;
+    padding: 10px 0 0 0;
 }
 .previousPrice{
     text-decoration: line-through;
@@ -33,11 +36,11 @@
 .discountPrice{
     background-color: #000;
     color: #fff;
-    padding: 5px 15px;
+    padding: 3px 12px;
 }
 
 .coversBlock{
-    height: 65%;
+    height: 70%;
 }
 .coversHeading{
     font-size: 23px;
@@ -45,10 +48,16 @@
 
 .eachCoverItemBlock{
     display: flex;
+    justify-content: left;
     gap: 5px;
+    /* background-color: #000; */
+    margin-left: -15px;
 }
 .arrowImage{
-    height: 15px;
+    height: 18px;
+}
+.eachCoverPoint{
+    font-size: 15px;
 }
 .productBtn{
     background-color: #000;
@@ -56,7 +65,10 @@
     width: 180px;
     height: 45px;
     border-radius: 15px;
-    margin-left: 25%;
+    margin-left: 20%;
+}
+.connect{
+    margin-top: 40px;
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {
@@ -78,6 +90,15 @@
     }
     .eachCoverItemBlock{
         font-size: 6px;
+        align-items: center;
+        gap: 8px;
+    }
+    .arrowImage{
+        height: 14px;
+    }
+    .eachCoverPoint{
+        font-size: 7px;
+        margin: 6px;
     }
     .productBtn{
         height: 25px;
@@ -92,22 +113,32 @@
         height: 360px;
     }
     .itrPlanHeading{
-        font-size: 12px;
+        font-size: 16px;
     }
     .ItrPart-2{
         height: 80%;
     }
     .priceBlock{
-        font-size: 8px;
-    }
-    .coversHeading{
         font-size: 12px;
     }
+    .coversHeading{
+        font-size: 16px;
+    }
     .eachCoverItemBlock{
-        font-size: 8px;
+        font-size: 6px;
+        align-items: center;
+        gap: 8px;
+    }
+    .arrowImage{
+        height: 16px;
+    }
+    .eachCoverPoint{
+        font-size: 9px;
+        margin: 6px;
     }
     .productBtn{
-        height: 30px;
+        height: 25px;
+        width: 120px;
         font-size: 12px;
     }
 }

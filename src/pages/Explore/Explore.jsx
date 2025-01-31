@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Explore.css'
+import arrow from '../../components/ItrPlanProduct/arrow.png'
 import TaxServices from '../../components/TaxServices/TaxServices'
 import ItrPlanProduct from '../../components/ItrPlanProduct/ItrPlanProduct'
 import ContactForm from '../../components/ContactForm/ContactForm'
@@ -104,32 +105,71 @@ const Explore = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className='productBtn' onClick={changeState}>Connect Now</button>
+                    <button className='productBtn connect' onClick={changeState}>Connect Now</button>
                 </div>
               </li>
           </ul>
         </section>
         <section className='itrPlanContainer' id='BusinessRelatedSection'>
-          <h1 className='itrPlansHeading'>Business related services</h1>
-          <ul className='itrFlexBlock'>
-              {
-                itrPlaningData.map((each)=><ItrPlanProduct each={each} changeStates={changeState}/>)
-              }
-              <li className='EachItrPlanContainer'>
-                <p className='itrPlanHeading'>Expert Assistance</p>
-                <div className='ItrPart-2'>
-                    <div className='priceBlock'>
-                    </div>
-                    <div className='coversBlock'>
-                      <ul>
-                        <li className='eachCoverItemBlock'>
-                          <p className='eachCoverPoint'>Unable to Find? Connect For Expert Assistance.</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <button className='productBtn' onClick={changeState}>Connect Now</button>
-                </div>
-              </li>
+          <h1 className='itrPlansHeading' style={{marginBottom:'45px'}}>Business related services</h1>
+          <ul className='itrFlexBlock' style={{justifyContent:'space-around'}}>
+            <li className='EachItrPlanContainer'>
+              <p className='itrPlanHeading'>GST services</p>
+              <div className='ItrPart-2'>
+                  <div className='priceBlock'>
+                    <p className='currentPrice'>₹ 999</p>
+                    <p className='previousPrice'>2000</p>
+                    <p className='discountPrice'>Save 50%</p>
+                  </div>
+                  <div className='coversBlock'>
+                    <p className='coversHeading'>Covers:</p>
+                    <ul>
+                      <li className='eachCoverItemBlock'>
+                        <img src={arrow} alt='arrow' className='arrowImage'/>
+                        <p className='eachCoverPoint'>GST Registration</p>
+                      </li>
+                      <li className='eachCoverItemBlock'>
+                        <img src={arrow} alt='arrow' className='arrowImage'/>
+                        <p className='eachCoverPoint'>GST fillings</p>
+                      </li>
+                      <li className='eachCoverItemBlock'>
+                        <img src={arrow} alt='arrow' className='arrowImage'/>
+                        <p className='eachCoverPoint'>Other GST services</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button className='productBtn'>Get a quote</button>
+              </div>
+            </li>
+            <li className='EachItrPlanContainer'>
+              <p className='itrPlanHeading'>Accounting services</p>
+              <div className='ItrPart-2'>
+                  <div className='priceBlock'>
+                    <p className='currentPrice'>₹ 2999</p>
+                    <p className='previousPrice'>6000</p>
+                    <p className='discountPrice'>Save 50%</p>
+                  </div>
+                  <div className='coversBlock'>
+                    <p className='businessParagraph'>
+                      Our Accounting Filing service covers all aspects of financial reporting, bookkeeping, and tax preparation to ensure your business runs efficiently and stays compliant with local regulations. From maintaining accurate records in Xero, QuickBooks, or Zoho Books, to preparing your financial statements and tax filings, we take care of your accounting needs so you can focus on your growing business
+                    </p>
+                  </div>
+                  <button className='productBtn'>Get a quote</button>
+              </div>
+            </li>
+            <li className='EachItrPlanContainer'>
+              <p className='itrPlanHeading'>Other services</p>
+              <div className='ItrPart-2'>
+                  <div className='priceBlock'>
+                    <p className='currentPrice'>₹ 999</p>
+                    <p className='previousPrice'>2000</p>
+                    <p className='discountPrice'>Save 50%</p>
+                  </div>
+                  <div className='coversBlock'>
+                  </div>
+                  <button className='productBtn'>Get a quote</button>
+              </div>
+            </li>
           </ul>
         </section>
         <ContactForm setChange={contactOff} contactOn={contactOn} />

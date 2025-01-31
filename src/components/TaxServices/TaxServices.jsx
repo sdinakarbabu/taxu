@@ -11,7 +11,7 @@ const TaxServices = (props) => {
                 <div className='eachTaxBox'>
                   <h1 className='taxserviceName'>{each.name}</h1>
                   <p className='taxserviceDescription'>{each.description}</p>
-                  <button className='taxserviceBtn'><a href={each.btnLink}>{each.btnName}</a></button>
+                  <a href={each.btnLink}><button className='taxserviceBtn'>{each.btnName}</button></a>
                 </div>
               )
             })
