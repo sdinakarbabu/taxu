@@ -6,8 +6,8 @@
     height: 100vh;
 }
 .eachTaxBox{
-    width: 480px;
-    height: 420px;
+    width: 580px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,11 +18,12 @@
     box-shadow: -15px 12px 15px gray;
 }
 .taxserviceName{
-    font-size: 25px;
-    height: 10%;
+    font-size: 32px;
+    height: 15%;
 }
 .taxserviceDescription{
     height: 60%;
+    font-size: 18px;
 }
 .taxserviceBtn{
     margin: 0;
