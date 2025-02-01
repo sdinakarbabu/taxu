@@ -1,10 +1,21 @@
 import React from 'react'
 import './Enquiry.css'
-import logo from './expert.jpg'
-import Itr from './Itrfiles.webp'
+// import logo from './expert.jpg'
+// import Itr from './Itrfiles.webp'
 import WhyToChoose from '../WhyToChoose/WhyToChoose';
 import WorkFlowTaxu from '../WorkFlowTaxu/WorkFlowTaxu';
 import InterestingFact from '../InterestingFact/InterestingFact';
+
+const AccountingData = [
+  {
+    heading:"LETS CONNECT WITH EXPERT",
+    description:"Streamline your finances with professional expertise, ensuring accuracy and compliance while you focus on what matters most."
+  },
+  {
+    heading:"EXPLORE",
+    description:"Begin your journey towards financial freedom with our comprehensive offerings tailored just for you."
+  }
+]
 
 const Enquiry = (props) => {
   const {setChange,contactOn} = props
@@ -14,8 +25,8 @@ const Enquiry = (props) => {
   return (
     <>
     <section className='EnquirySection' id='EnquirySection'>
-        <h1 className='mainQuoteHeading'>"Simplify Your Finances with Expert Tax Filing and Accounting Services."</h1>
-        <div className='EnquiryContainer'>
+      <h1 className='mainQuoteHeading'>"Simplify Your Finances with Expert Tax Filing and Accounting Services."</h1>
+        {/* <div className='EnquiryContainer'>
           <div className='enquiryBlock'>
             <img src={logo} alt={logo} className='img-expert'/>
              <div className='flex-aliginleft'>
@@ -32,7 +43,19 @@ const Enquiry = (props) => {
                 <button className='BtnEnquiry' onClick={()=>window.location.href="/products"}>Explore   ➜</button>
               </div>
           </div>
-        </div>
+        </div> */}
+      <div className='accountingServicesContainer'>
+        {
+          AccountingData.map((ele)=>{
+            return(
+              <div className='accountingServicesEachBlock'>
+                <h1 className='serviceHeading'>{ele.heading}</h1>
+                <p className='serviceDescription'>{ele.description}</p>
+              </div>
+            )
+          })
+        }
+      </div> 
     </section>
     <WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/><hr/>
     </>

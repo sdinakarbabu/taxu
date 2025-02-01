@@ -1,14 +1,11 @@
-.didYouKnowSection{
-    /* background-color: aqua; */
+/* .didYouKnowSection{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     height: 80vh;
     margin: 45px 25px 30px 25px;
 }
 .didYouKnowHeading{
     font-size: 65px;
-    /* background-color: bisque; */
     margin: 3px 0;
     letter-spacing: 7px;
     font-family: "Nunito";
@@ -127,4 +124,148 @@
     .eachChoosePoint{
         margin: 18px;
     }
+} */
+
+.didYouKnowContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 45px;
+    height: 120vh;
+}
+.didYouKnowMainHeading{
+    font-size: 75px;
+    text-align: center;
+    font-family: "Nunito";
+    margin: 25px 0px 95px 0px;
+}
+.didYouKnowBlockLeft{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lato';
+}
+
+.didYouKnowEachBlock{
+    background-color: rgb(130, 130, 242);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 40%;
+    padding: 15px 35px;
+    border-radius: 40px;
+    margin: 10px 15px;
+    box-shadow: -2px 0.5px 8px #000;
+}
+.didYouKnowHeading{
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: 'Cinzel';
+}
+.didYouKnowDescription{
+    font-size: 14px;
+    line-height: 35px;
+    font-family: 'Roboto Mono';
+}
+
+.didYouKnowBlockRight{
+    background-color: rgb(119, 155, 155);
+    height: 380px;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .didYouKnowContainer{
+        display: block;
+        height: 300vh;
+        width: 100vw;
+        margin: 0%;
+    }
+    .didYouKnowMainHeading{
+        font-size: 28px;
+    }
+    .didYouKnowBlockLeft{
+        width: 100%;
+    }
+    
+    .didYouKnowEachBlock{
+        width: 100%;
+    }
+    .didYouKnowHeading{
+        font-size: 16px;
+    }
+    .didYouKnowDescription{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    
+    .didYouKnowBlockRight{
+        width: 100%;
+    }    
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .didYouKnowContainer{
+        display: block;
+        height: 200vh;
+        width: 100vw;
+        margin: 0%;
+    }
+    .didYouKnowMainHeading{
+        font-size: 45px;
+    }
+    .didYouKnowBlockLeft{
+        width: 100%;
+        display: flex;
+    }
+    
+    .didYouKnowEachBlock{
+        width: 45%;
+    }
+    .didYouKnowHeading{
+        font-size: 16px;
+    }
+    .didYouKnowDescription{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    
+    .didYouKnowBlockRight{
+        width: 100%;
+    }   
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .didYouKnowContainer{
+        height: 100vh;
+        width: 100vw;
+        margin: 0%;
+    }
+    .didYouKnowMainHeading{
+        font-size: 65px;
+    }
+    .didYouKnowBlockLeft{
+        width: 60%;
+        display: flex;
+    }
+    
+    .didYouKnowEachBlock{
+        width: 40%;
+    }
+    .didYouKnowHeading{
+        font-size: 16px;
+    }
+    .didYouKnowDescription{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    
+    .didYouKnowBlockRight{
+        width: 45%;
+    } 
 }
