@@ -35,7 +35,8 @@
 
 }
 .discountPrice{
-    background-color: #000;
+    background-color: #5d78c0;
+    box-shadow: -1px 0.5px 5px #797c85;
     color: #fff;
     padding: 3px 12px;
 }
@@ -61,7 +62,9 @@
     font-size: 15px;
 }
 .productBtn{
-    background-color: #000;
+    background-color: #5d78c0;
+    border: 2px solid #5d78c0;
+    box-shadow: -1px 0.5px 5px #797c85;
     color: #fff;
     width: 180px;
     height: 45px;

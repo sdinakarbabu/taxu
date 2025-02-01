@@ -1,0 +1,150 @@
+.WhatWeDoSection{
+    height: 200vh;
+}
+.WhatWeDoMainHeading{
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 85px;
+}
+
+#WhatWeDoEachBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+    margin: 65px 65px;
+}
+.WhatWeDoBlockLeftPart{
+    height: 420px;
+}
+.WhatWeDoHeading{
+    font-size: 55px;
+    margin: 15px;
+    font-family: 'Cinzel';
+}
+.WhatWeDoDescription{
+    font-family: 'Lato';
+    font-size: 26px;
+    line-height: 45px;
+    margin: 35px;
+}
+.WhatWeDoBtn{
+    background-color: transparent;
+    color: #2e5adc;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #5d78c0;
+    box-shadow: -1px 0.5px 5px #797c85;
+    border-radius: 8px;
+    width: 180px;
+    height: 45px;
+    font-family: 'Roboto Mono';
+}
+.WhatWeDoImage{
+    height: 350px;
+    width: 420px;
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .WhatWeDoSection{
+        height: 300vh;
+    }
+    .WhatWeDoMainHeading{
+        font-size: 40px;
+    }
+    
+    #WhatWeDoEachBlock{
+        margin: 65px 15px;
+    }
+    .WhatWeDoBlockLeftPart{
+        height: 350px;
+    }
+    .WhatWeDoHeading{
+        font-size: 16px;
+        margin: 15px;
+    }
+    .WhatWeDoDescription{
+        font-size: 12px;
+        line-height: 15px;
+        margin: 15px;
+    }
+    .WhatWeDoBtn{
+        width: 80px;
+        height: 35px;
+    }
+    .WhatWeDoBlockRightPart{
+    }
+    .WhatWeDoImage{
+        height: 180px;
+        width: 120px;
+    }
+    
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .WhatWeDoSection{
+        height: 220vh;
+    }
+    .WhatWeDoMainHeading{
+        font-size: 60px;
+    }
+    
+    #WhatWeDoEachBlock{
+        margin: 65px 15px;
+    }
+    .WhatWeDoBlockLeftPart{
+        height: 350px;
+    }
+    .WhatWeDoHeading{
+        font-size: 23px;
+        margin: 15px;
+    }
+    .WhatWeDoDescription{
+        font-size: 16px;
+        line-height: 30px;
+        margin: 15px;
+    }
+    .WhatWeDoBtn{
+        width: 160px;
+        height: 35px;
+    }
+    .WhatWeDoBlockRightPart{
+    }
+    .WhatWeDoImage{
+        height: 280px;
+        width: 250px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .WhatWeDoSection{
+        height: 180vh;
+    }
+    .WhatWeDoMainHeading{
+        font-size: 80px;
+    }
+    
+    #WhatWeDoEachBlock{
+        margin: 65px 15px;
+    }
+    .WhatWeDoBlockLeftPart{
+        height: 350px;
+    }
+    .WhatWeDoHeading{
+        font-size: 28px;
+        margin: 15px;
+    }
+    .WhatWeDoDescription{
+        font-size: 20px;
+        line-height: 45px;
+        margin: 25px;
+    }
+    .WhatWeDoBtn{
+        width: 180px;
+        height: 50px;
+    }
+    .WhatWeDoImage{
+        height: 350px;
+        width: 280px;
+    }
+}

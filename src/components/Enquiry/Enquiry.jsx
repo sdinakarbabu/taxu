@@ -5,6 +5,7 @@ import './Enquiry.css'
 import WhyToChoose from '../WhyToChoose/WhyToChoose';
 import WorkFlowTaxu from '../WorkFlowTaxu/WorkFlowTaxu';
 import InterestingFact from '../InterestingFact/InterestingFact';
+import WhatWeDo from '../WhatWeDo/WhatWeDo';
 
 const AccountingData = [
   {
@@ -57,7 +58,7 @@ const Enquiry = (props) => {
         }
       </div> 
     </section>
-    <WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/><hr/>
+    <WhatWeDo/><WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/><hr/>
     </>
   )
 }
