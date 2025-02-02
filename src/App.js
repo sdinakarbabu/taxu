@@ -18,7 +18,9 @@ const App =()=> {
               <Route path='/contact' element={<ContactForm/>} />
             </Routes>
           </BrowserRouter>
+        <hr style={{width:'100vw',padding:"1px", backgroundColor:'#000000'}}/>
         <Footer/>
+        <hr style={{width:'100vw',padding:"1px", backgroundColor:'#000'}}/>
       </main>
     );
 }
