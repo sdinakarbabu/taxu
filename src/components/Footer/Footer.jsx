@@ -5,10 +5,12 @@ const data = [
         name:"Quick Links",
         subList:[
             {
-                name:"About"
+                name:"About",
+                link:''
             },
             {
-                name:"Contact"
+                name:"Contact",
+                link:''
             }
         ]
     },
@@ -16,16 +18,20 @@ const data = [
         name:"Products",
         subList:[
             {
-                name:"ITR Filing"
+                name:"ITR Filing",
+                link:'products/#itrPlanSection'
             },
             {
-                name:"GST Filing"
+                name:"GST Filing",
+                link:'products/#itrPlanSection'
             },
             {
-                name:"Accounting"
+                name:"Accounting",
+                link:'products/#itrPlanSection'
             },
             {
-                name:"TDS & Tax planning"
+                name:"TDS & Tax planning",
+                link:'products/#itrPlanSection'
             }
         ]
     },
@@ -33,22 +39,28 @@ const data = [
         name:"Services For Individuals",
         subList:[
             {
-                name:"ITR Filing"
+                name:"ITR Filing",
+                link:'products/#itrPlanSection'
             },
             {
-                name:"Tax planning"
+                name:"Tax planning",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"Business consultion"
+                name:"Business consultion",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"HUF Registration"
+                name:"HUF Registration",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"Pancard"
+                name:"Pancard",
+                link:'products/#itrPlanSection'
             },
             {
-                name:"PF & ESI"
+                name:"PF & ESI",
+                link:'products/#BusinessRelatedSection'
             }
         ]
     },
@@ -56,22 +68,28 @@ const data = [
         name:"Services For Business",
         subList:[
             {
-                name:"ITR Filing"
+                name:"ITR Filing",
+                link:'products/#itrPlanSection'
             },
             {
-                name:"GST Filing"
+                name:"GST Filing",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"Budgeting"
+                name:"Budgeting",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"Business Registrations"
+                name:"Business Registrations",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"Accounting"
+                name:"Accounting",
+                link:'products/#BusinessRelatedSection'
             },
             {
-                name:"Financial Planning"
+                name:"Financial Planning",
+                link:'products/#BusinessRelatedSection'
             }
         ]
     }
@@ -86,7 +104,7 @@ const Footer = () => {
                 <ul>
                     <li className='item-name' key={count++}>{each.name}</li>
                     <ul>
-                        {each.subList.map((eachInner)=><li className='inner-eachItem' key={count++}>{eachInner.name}</li>)}
+                        {each.subList.map((eachInner)=><li className='inner-eachItem' key={count++}><a href={`/${eachInner.link}`}>{eachInner.name}</a></li>)}
                     </ul>
                 </ul>
             )

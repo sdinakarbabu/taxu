@@ -4,6 +4,10 @@
     justify-content: space-around;
     text-transform: uppercase;
 }
+a{
+    color: #000;
+    text-decoration: none;
+}
 .item-name{
     font-weight: bold;
     list-style-type: none;
@@ -17,7 +21,7 @@
     font-family: "Lato";
     margin: 10px 0 0 0px;
 }
-.inner-eachItem:hover{
+.inner-eachItem,a:hover{
     color: blue;
 }
 

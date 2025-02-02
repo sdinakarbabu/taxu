@@ -52,13 +52,14 @@ const Enquiry = (props) => {
               <div className='accountingServicesEachBlock'>
                 <h1 className='serviceHeading'>{ele.heading}</h1>
                 <p className='serviceDescription'>{ele.description}</p>
+                <a href='/products'><button className='serviceBtn'>Explore</button></a>
               </div>
             )
           })
         }
       </div> 
     </section>
-    <WhatWeDo/><WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/><hr/>
+    <WhatWeDo/><WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/>
     </>
   )
 }
