@@ -3,6 +3,8 @@
 }
 .itrPlansHeading{
     text-align: center;
+    font-size: 55px;
+    margin: 5rem 1rem;
 }
 .itrFlexBlock{
     display: flex;
@@ -19,6 +21,9 @@
 @media screen and (min-width:300px) and (max-width:480px) {
     .itrFlexBlock{
         gap: 12px;
+    }
+    .itrPlansHeading{
+        font-size: 32px;
     }
     .businessParagraph{
         font-size: 8px;

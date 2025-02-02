@@ -111,7 +111,7 @@ const Explore = () => {
           </ul>
         </section>
         <section className='itrPlanContainer' id='BusinessRelatedSection'>
-          <h1 className='itrPlansHeading' style={{marginBottom:'45px'}}>Business related services</h1>
+          <h1 className='itrPlansHeading'>Business related services</h1>
           <ul className='itrFlexBlock' style={{justifyContent:'space-around'}}>
             <li className='EachItrPlanContainer'>
               <p className='itrPlanHeading'>GST services</p>
