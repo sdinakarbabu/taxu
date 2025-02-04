@@ -1,8 +1,8 @@
 import React from 'react'
 import './WhatWeDo.css'
-import tax from './tax.gif'
-import accounting from './accounting.gif'
-import compliances from './compliances.gif'
+import tax from './tax.png'
+import accounting from './accounting.png'
+import compliances from './compliances.png'
 
 const WhatWeDoData = [
     {

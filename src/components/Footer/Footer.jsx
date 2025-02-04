@@ -10,7 +10,7 @@ const data = [
             },
             {
                 name:"Contact",
-                link:''
+                link:'contact'
             }
         ]
     },

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './ContactForm.css'
+import contactImage from './Contact us-pana.png'
 
 const ContactForm = () => {
     const [result, setResult] = useState("");
@@ -29,10 +30,8 @@ const ContactForm = () => {
   return (
     <section id='ContactFormSection'>
         <div className='ContactFormLeftPart'>
-            <h1>Taxu</h1>
-            <p>
-                
-            </p>
+            <h1 className='contactHeading'>Taxu</h1>
+            <img src={contactImage} alt='contact-image' className='contactImage' />
         </div>
         <div className='ContactFormRightPart'>
             <div style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
@@ -54,12 +53,21 @@ const ContactForm = () => {
                     Looks good!
                     </div>
                 </div>
+                <div class="col-md-7">
+                    <label for="validationCustomUsername" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Phone Number</label>
+                    <div class="input-group has-validation">
+                    <input type="text" minLength={10} max={13} class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='phoneNumber' id="validationCustomPhoneNumber" aria-describedby="inputGroupPrepend" required/>
+                    <div class="invalid-feedback">
+                        Please enter phone number.
+                    </div>
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <label for="validationCustomUsername" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Email</label>
                     <div class="input-group has-validation">
-                    <input type="email" class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='Email' id="validationCustomUsername" aria-describedby="inputGroupPrepend" required/>
+                    <input type="email" class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='Email' id="validationCustomEmail" aria-describedby="inputGroupPrepend" required/>
                     <div class="invalid-feedback">
-                        Please choose a username.
+                        Please check Email.
                     </div>
                     </div>
                 </div>
