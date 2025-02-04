@@ -44,7 +44,7 @@ const WhatWeDo = () => {
                         </div>
                         <div className='WhatWeDoBlockRightPart'>
                             <figure>
-                                <img src={each.image} alt='Gst filling' className='WhatWeDoImage'/>
+                                <img src={each.image} alt='Gst filling' style={{display:'none'}} className='WhatWeDoImage'/>
                             </figure>
                         </div>
                     </div>
