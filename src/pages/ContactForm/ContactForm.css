@@ -2,7 +2,7 @@
 
 #ContactFormSection{
   font-family: 'Poppins', sans-serif;
-  height: 90vh;
+  height: 100vh;
   /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
   display: flex;
   justify-content: space-between;
