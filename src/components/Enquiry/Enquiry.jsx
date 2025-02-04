@@ -10,11 +10,15 @@ import WhatWeDo from '../WhatWeDo/WhatWeDo';
 const AccountingData = [
   {
     heading:"LETS CONNECT WITH EXPERT",
-    description:"Streamline your finances with professional expertise, ensuring accuracy and compliance while you focus on what matters most."
+    description:"Streamline your finances with professional expertise, ensuring accuracy and compliance while you focus on what matters most.",
+    btn:"Contact",
+    link:"/contact"
   },
   {
     heading:"EXPLORE",
-    description:"Begin your journey towards financial freedom with our comprehensive offerings tailored just for you."
+    description:"Begin your journey towards financial freedom with our comprehensive offerings tailored just for you.",
+    btn:"Explore",
+    link:"/products"
   }
 ]
 
@@ -52,7 +56,7 @@ const Enquiry = (props) => {
               <div className='accountingServicesEachBlock'>
                 <h1 className='serviceHeading'>{ele.heading}</h1>
                 <p className='serviceDescription'>{ele.description}</p>
-                <a href='/products'><button className='serviceBtn'>Explore</button></a>
+                <a href={ele.link}><button className='serviceBtn'>{ele.btn}</button></a>
               </div>
             )
           })

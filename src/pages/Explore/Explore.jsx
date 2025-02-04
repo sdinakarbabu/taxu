@@ -132,7 +132,7 @@ const Explore = () => {
                       </li>
                     </ul>
                   </div>
-                  <button className='productBtn'>Get a quote</button>
+                  <a href='/contact'><button className='productBtn'>Get a quote</button></a>
               </div>
             </li>
             <li className='EachItrPlanContainer'>
@@ -148,7 +148,7 @@ const Explore = () => {
                       Our Accounting Filing service covers all aspects of financial reporting, bookkeeping, and tax preparation to ensure your business runs efficiently and stays compliant with local regulations. From maintaining accurate records in Xero, QuickBooks, or Zoho Books, to preparing your financial statements and tax filings, we take care of your accounting needs so you can focus on your growing business
                     </p>
                   </div>
-                  <button className='productBtn'>Get a quote</button>
+                  <a href='/contact'><button className='productBtn'>Get a quote</button></a>
               </div>
             </li>
             <li className='EachItrPlanContainer'>
@@ -161,7 +161,7 @@ const Explore = () => {
                   </div>
                   <div className='coversBlock'>
                   </div>
-                  <button className='productBtn'>Get a quote</button>
+                  <a href='/contact'><button className='productBtn'>Get a quote</button></a>
               </div>
             </li>
           </ul>
