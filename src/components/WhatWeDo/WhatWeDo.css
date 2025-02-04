@@ -49,7 +49,7 @@
 
 @media screen and (min-width:300px) and (max-width:480px) {
     .WhatWeDoSection{
-        height: 300vh;
+        height: 220vh;
     }
     .WhatWeDoMainHeading{
         font-size: 40px;

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import './ContactForm.css'
 
-const ContactForm = (props) => {
-    const {setChange,contactOn} = props
+const ContactForm = () => {
     const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
@@ -27,65 +26,68 @@ const ContactForm = (props) => {
             setResult(data.message);
         }
     };
-    const changeState = ()=>{
-        setChange(!contactOn)
-    }
   return (
-    <section id='ContactFormSection' style={(contactOn)?{zIndex:"100",display:'block'}:{zIndex:"-100",display:'none'}}>
-        <div class="container">
-            <div style={{display:"flex", justifyContent:"space-between"}}>
+    <section id='ContactFormSection'>
+        <div className='ContactFormLeftPart'>
+            <h1>Taxu</h1>
+            <p>
+                
+            </p>
+        </div>
+        <div className='ContactFormRightPart'>
+            <div style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
                 <h1 class="text"> Contact us Form</h1>
-                <button type='button' style={{width:"45px",height:"25px", backgroundColor:"transparent",border:"none"}} className='btnContact' onClick={changeState}>Close</button>
+                <a href='/'><button type='button' className='btnContact'>Close</button></a>
             </div>
             <form class="row g-3 needs-validation" novalidate onSubmit={onSubmit}>
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">First name</label>
-                    <input type="text" class="form-control" name='Firstname' id="validationCustom01" required/>
+                <div class="col-md-7">
+                    <label for="validationCustom01" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>First name</label>
+                    <input type="text" class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='Firstname' id="validationCustom01" required/>
                     <div class="valid-feedback">
                     Looks good!
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label">Last name</label>
-                    <input type="text" class="form-control" name='LastName' id="validationCustom02" required/>
+                <div class="col-md-7">
+                    <label for="validationCustom02" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Last name</label>
+                    <input type="text" class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='LastName' id="validationCustom02" required/>
                     <div class="valid-feedback">
                     Looks good!
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="validationCustomUsername" class="form-label">Email</label>
+                    <label for="validationCustomUsername" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Email</label>
                     <div class="input-group has-validation">
-                    <input type="email" class="form-control" name='Email' id="validationCustomUsername" aria-describedby="inputGroupPrepend" required/>
+                    <input type="email" class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='Email' id="validationCustomUsername" aria-describedby="inputGroupPrepend" required/>
                     <div class="invalid-feedback">
                         Please choose a username.
                     </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">Language</label>
-                    <select class="form-select" name="Language" id="validationCustom04" required>
+                    <label for="validationCustom04" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Language</label>
+                    <select class="form-select" style={{border:'2px solid rgb(91, 91, 254)'}} name="Language" id="validationCustom04" required>
                     <option value="English" selected>English</option>
                     <option value="Telugu">Telugu</option>
                     <option value="Hindi">Hindi</option>
                     </select>
-                    <div class="invalid-feedback">
+                    <div class="invalid-feedback" style={{fontWeight:'500', letterSpacing:'1px'}}>
                         Please select Language.
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="validationCustom05" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <div class="invalid-feedback">
+                    <label for="validationCustom05" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Message</label>
+                    <textarea class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="invalid-feedback" style={{fontWeight:'500', letterSpacing:'1px'}}>
                         Please provide Message for contacting us.
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
-                    <label class="form-check-label" for="invalidCheck">
+                    <input class="form-check-input" style={{border:'2px solid rgb(91, 91, 254)'}} type="checkbox" value="" id="invalidCheck" required/>
+                    <label class="form-check-label" for="invalidCheck" style={{fontWeight:'500', letterSpacing:'1px'}}>
                         Agree to terms and conditions
                     </label>
-                    <div class="invalid-feedback">
+                    <div class="invalid-feedback" style={{fontWeight:'500', letterSpacing:'1px'}}>
                         You must agree before submitting.
                     </div>
                     </div>

@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Explore from './pages/Explore/Explore';
-import ContactForm from './components/ContactForm/ContactForm';
+import ContactForm from './pages/ContactForm/ContactForm';
 
 const App =()=> {  
 

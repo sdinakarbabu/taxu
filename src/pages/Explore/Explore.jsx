@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Explore.css'
 import arrow from '../../components/ItrPlanProduct/arrow.png'
 import TaxServices from '../../components/TaxServices/TaxServices'
 import ItrPlanProduct from '../../components/ItrPlanProduct/ItrPlanProduct'
-import ContactForm from '../../components/ContactForm/ContactForm'
 
 const TaxServicesList = [
   {
@@ -79,11 +78,6 @@ const itrPlaningData = [
 ]
 
 const Explore = () => {
-  const [contactOn,contactOff] = useState(false);
-  const changeState = ()=>{
-    window.location.href='#taxServicesContainer'
-    contactOff(!contactOn)
-  }
   return (
     <section id='explorePageSection'>
         <TaxServices TaxServicesList={TaxServicesList} />
@@ -91,7 +85,7 @@ const Explore = () => {
           <h1 className='itrPlansHeading'>ITR Plans</h1>
           <ul className='itrFlexBlock'>
               {
-                itrPlaningData.map((each)=><ItrPlanProduct each={each} changeStates={changeState}/>)
+                itrPlaningData.map((each)=><ItrPlanProduct each={each}/>)
               }
               <li className='EachItrPlanContainer'>
                 <p className='itrPlanHeading'>Expert Assistance</p>
@@ -105,7 +99,7 @@ const Explore = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className='productBtn connect' onClick={changeState}>Connect Now</button>
+                    <button className='productBtn connect'>Connect Now</button>
                 </div>
               </li>
           </ul>
@@ -172,7 +166,7 @@ const Explore = () => {
             </li>
           </ul>
         </section>
-        <ContactForm setChange={contactOff} contactOn={contactOn} />
+        {/* <ContactForm setChange={contactOff} contactOn={contactOn} /> */}
     </section>
   )
 }

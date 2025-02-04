@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className='part-2'>Taxu</div>
         <div className='part-3'>
-          <button className='reqBtn' onClick={()=>window.location.href="#EnquirySection"}>Get Started</button>
+          <button className='reqBtn' onClick={()=>window.location.href="/contact"}>Get Started</button>
         </div>
     </section>
   )
