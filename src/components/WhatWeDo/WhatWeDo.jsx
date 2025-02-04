@@ -39,12 +39,12 @@ const WhatWeDo = () => {
                             <h1 className='WhatWeDoHeading'>{each.heading}</h1>
                             <p className='WhatWeDoDescription'>{each.description}</p>
                             <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                                <button className='WhatWeDoBtn'>{each.btn}</button>
+                                <button className='WhatWeDoBtn' style={{display:'none'}}>{each.btn}</button>
                             </div>
                         </div>
                         <div className='WhatWeDoBlockRightPart'>
                             <figure>
-                                <img src={each.image} alt='Gst filling' style={{display:'none'}} className='WhatWeDoImage'/>
+                                <img src={each.image} alt='Gst filling' className='WhatWeDoImage'/>
                             </figure>
                         </div>
                     </div>
