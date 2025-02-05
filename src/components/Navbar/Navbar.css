@@ -5,7 +5,7 @@
     height: 65px;
 }
 .part-1{
-    font-size: 32px;
+    font-size: 23px;
     font-family: "Lato";
     margin-top: 30px;
 
@@ -62,25 +62,26 @@
 
 @media screen and (min-width:300px) and (max-width:480px) {
     .part-1{
-        font-size: 12px;
+        font-size: 8px;
+        margin-top: 23px;
         /* background-color: beige; */
     }
     .part-2{
-        font-size: 35px;
+        font-size: 28px;
        letter-spacing: 8px;
     }
     .part-3{
     }
     
     .part-1 > .nav-items{
-        gap:6px;
+        gap:5px;
     }
     .reqBtn{
         width: 80px;
         height: 25px;
         font-size: 8px;
         margin-right: -40px;
-        margin-top: 23px;
+        margin-top: 15px;
     }
 }
 

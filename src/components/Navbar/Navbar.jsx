@@ -7,6 +7,7 @@ const Navbar = () => {
             <ul className='nav-items'>
                 <li className='item-headings' onClick={()=>window.location.href="/"}><p>Home</p></li>
                 <li className='item-headings' onClick={()=>window.location.href="/products"}><p>Products</p></li>
+                <li className='item-headings' onClick={()=>window.location.href="/contact"}><p>Contact</p></li>
             </ul>
         </div>
         <div className='part-2'>Taxu</div>
