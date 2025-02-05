@@ -29,6 +29,7 @@
     .InterestingFactHeading{
         font-size: 23px;
         letter-spacing: 2px;
+        margin: auto;
     
     }
     .InterestingFactDescription{
@@ -45,6 +46,7 @@
     .InterestingFactHeading{
         font-size: 28px;
         letter-spacing: 4px;
+        margin: auto;
     
     }
     .InterestingFactDescription{
@@ -59,6 +61,7 @@
     .InterestingFactHeading{
         font-size: 58px;
         letter-spacing: 4px;
+        margin: auto;
     
     }
     .InterestingFactDescription{
