@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState(localStorage.getItem('navLink')); 
+  const [activeLink, setActiveLink] = useState(
+    (localStorage.getItem('navLink') === null)?localStorage.setItem('navLink','home'):localStorage.getItem('navLink')
+  ); 
   const handleLinkClick = (link) => {
     localStorage.setItem('navLink',link)
     setActiveLink(link);
   };
-
   return (
     <section className='navbar-container'>
         <div className='part-1'> 
