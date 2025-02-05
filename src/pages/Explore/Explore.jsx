@@ -114,7 +114,7 @@ const Explore = () => {
               <p className='itrPlanHeading'>GST services</p>
               <div className='ItrPart-2'>
                   <div className='priceBlock'>
-                    <p className='currentPrice'>₹ 999</p>
+                    <p className='currentPrice'><span style={{fontSize:'12px',fontWeight:'600'}}>Starts from </span>₹ 999</p>
                     <p className='previousPrice'>2000</p>
                     <p className='discountPrice'>Save 50%</p>
                   </div>
@@ -144,7 +144,7 @@ const Explore = () => {
               <p className='itrPlanHeading'>Accounting services</p>
               <div className='ItrPart-2'>
                   <div className='priceBlock'>
-                    <p className='currentPrice'>₹ 2999</p>
+                    <p className='currentPrice'><span style={{fontSize:'12px',fontWeight:'600'}}>Starts from </span>₹ 2999</p>
                     <p className='previousPrice'>6000</p>
                     <p className='discountPrice'>Save 50%</p>
                   </div>
@@ -162,7 +162,7 @@ const Explore = () => {
               <p className='itrPlanHeading'>Other services</p>
               <div className='ItrPart-2'>
                   <div className='priceBlock'>
-                    <p className='currentPrice'>₹ 999</p>
+                    <p className='currentPrice'><span style={{fontSize:'12px',fontWeight:'600'}}>Starts from </span>₹ 999</p>
                     <p className='previousPrice'>2000</p>
                     <p className='discountPrice'>Save 50%</p>
                   </div>
