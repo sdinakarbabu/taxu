@@ -78,6 +78,7 @@ const itrPlaningData = [
 ]
 
 const Explore = () => {
+
   return (
     <section id='explorePageSection'>
         <TaxServices TaxServicesList={TaxServicesList} />
@@ -85,7 +86,7 @@ const Explore = () => {
           <h1 className='itrPlansHeading'>ITR Plans</h1>
           <ul className='itrFlexBlock'>
               {
-                itrPlaningData.map((each)=><ItrPlanProduct each={each}/>)
+                itrPlaningData.map((each)=><ItrPlanProduct  each={each} key={each.name} />)
               }
               <li className='EachItrPlanContainer'>
                 <p className='itrPlanHeading'>Expert Assistance</p>
@@ -99,7 +100,9 @@ const Explore = () => {
                         </li>
                       </ul>
                     </div>
-                    <button className='productBtn connect'>Connect Now</button>
+                    <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                      <a href='/contact'><button className='productBtn connect' onClick={()=>{localStorage.setItem('text',"Expert Assistance Require")}}>Connect Now</button></a>
+                    </div>
                 </div>
               </li>
           </ul>
@@ -132,7 +135,9 @@ const Explore = () => {
                       </li>
                     </ul>
                   </div>
-                  <a href='/contact'><button className='productBtn'>Get a quote</button></a>
+                  <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                    <a href='/contact'><button className='productBtn' onClick={()=>{localStorage.setItem('text',"GST services")}}>Get a quote</button></a>
+                  </div>
               </div>
             </li>
             <li className='EachItrPlanContainer'>
@@ -148,7 +153,9 @@ const Explore = () => {
                       Our Accounting Filing service covers all aspects of financial reporting, bookkeeping, and tax preparation to ensure your business runs efficiently and stays compliant with local regulations. From maintaining accurate records in Xero, QuickBooks, or Zoho Books, to preparing your financial statements and tax filings, we take care of your accounting needs so you can focus on your growing business
                     </p>
                   </div>
-                  <a href='/contact'><button className='productBtn'>Get a quote</button></a>
+                  <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                    <a href='/contact'><button className='productBtn' onClick={()=>{localStorage.setItem('text',"Accounting services")}}>Get a quote</button></a>
+                  </div>
               </div>
             </li>
             <li className='EachItrPlanContainer'>
@@ -161,7 +168,9 @@ const Explore = () => {
                   </div>
                   <div className='coversBlock'>
                   </div>
-                  <a href='/contact'><button className='productBtn'>Get a quote</button></a>
+                  <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                    <a href='/contact'><button className='productBtn' onClick={()=>{localStorage.setItem('text',"Other services require")}}>Get a quote</button></a>
+                  </div>
               </div>
             </li>
           </ul>

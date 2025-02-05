@@ -8,7 +8,7 @@ const TaxServices = (props) => {
           {
             TaxServicesList.map((each)=>{
               return(
-                <div className='eachTaxBox'>
+                <div className='eachTaxBox' key={each.name}> 
                   <h1 className='taxserviceName'>{each.name}</h1>
                   <p className='taxserviceDescription'>{each.description}</p>
                   <a href={each.btnLink}><button className='taxserviceBtn'>{each.btnName}</button></a>

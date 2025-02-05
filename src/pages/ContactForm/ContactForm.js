@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './ContactForm.css'
 import contactImage from './Contact us-pana.png'
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+    const {dataFromProduct} = props
     const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
@@ -22,6 +23,7 @@ const ContactForm = () => {
         if (data.success) {
             setResult("Form Submitted Successfully Our Team will contact you soon.");
             event.target.reset();
+            localStorage.clear();
         } else {
             console.log("Error", data);
             setResult(data.message);
@@ -84,7 +86,7 @@ const ContactForm = () => {
                 </div>
                 <div class="col-md-6">
                     <label for="validationCustom05" class="form-label" style={{fontWeight:'500', letterSpacing:'1px'}}>Message</label>
-                    <textarea class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" style={{border:'2px solid rgb(91, 91, 254)'}} name='Message' id="exampleFormControlTextarea1" rows="3">{dataFromProduct}</textarea>
                     <div class="invalid-feedback" style={{fontWeight:'500', letterSpacing:'1px'}}>
                         Please provide Message for contacting us.
                     </div>

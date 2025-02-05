@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ItrPlanProduct.css'
 import arrow from './arrow.png'
 
 
 const ItrPlanProduct = (props) => {
-  const {each} = props
+  const {each}=props
+
   return (
     <li className='EachItrPlanContainer'>
         <p className='itrPlanHeading'>{each.name}</p>
@@ -19,7 +20,7 @@ const ItrPlanProduct = (props) => {
               <ul>
                 {each.covers.map(element => {
                     return(
-                      <li className='eachCoverItemBlock'>
+                      <li className='eachCoverItemBlock' key={element.text}>
                         <img src={arrow} alt='arrow' className='arrowImage'/>
                         <p className='eachCoverPoint'>{element.text}</p>
                       </li>
@@ -30,7 +31,9 @@ const ItrPlanProduct = (props) => {
                 
               </ul>
             </div>
-            <a href='/contact'><button className='productBtn'>{each.btnName}</button></a>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+              <a href='/contact'  onClick={()=>{localStorage.setItem('text',each.name)}}><button className='productBtn'>{each.btnName}</button></a>
+            </div>
         </div>
     </li>
   )
