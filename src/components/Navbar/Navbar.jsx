@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState(localStorage.getItem('navLink')); 
+  const handleLinkClick = (link) => {
+    localStorage.setItem('navLink',link)
+    setActiveLink(link);
+  };
+
   return (
     <section className='navbar-container'>
         <div className='part-1'> 
             <ul className='nav-items'>
-                <li className='item-headings' onClick={()=>window.location.href="/"}><p>Home</p></li>
-                <li className='item-headings' onClick={()=>window.location.href="/products"}><p>Products</p></li>
-                <li className='item-headings' onClick={()=>window.location.href="/contact"}><p>Contact</p></li>
+                <li
+                className={activeLink === 'home' ? 'item-headings active' : 'item-headings'}
+                 onClick={()=>{
+                  handleLinkClick('home')
+                  window.location.href="/"
+
+                 }}><p>Home</p></li>
+                <li className={activeLink === 'products' ? 'item-headings active' : 'item-headings'}
+                 onClick={()=>{
+                  handleLinkClick('products')
+                  window.location.href="/products"
+
+                 }}><p>Products</p></li>
+                <li className={activeLink === 'contact' ? 'item-headings active' : 'item-headings'}
+                 onClick={()=>{
+                  handleLinkClick('contact')
+                  window.location.href="/contact"
+
+                 }}><p>Contact</p></li>
             </ul>
         </div>
         <div className='part-2'>Taxu</div>

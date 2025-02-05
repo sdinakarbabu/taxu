@@ -34,9 +34,10 @@
     align-items: center;
     cursor: pointer;
 }
-.item-headings:focus{
-    color: blue;
-}
+.active {
+    font-weight: bold;
+    color: #007bff; /* Highlight color */
+  }
 .item-headings:hover{
     color: blue;
     /* text-shadow: -1px 3px 2px #6578ba; */
