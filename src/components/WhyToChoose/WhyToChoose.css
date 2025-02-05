@@ -1,9 +1,15 @@
+#didYouKnowSection{
+    height: auto;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .didYouKnowContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 45px;
-    height: 100vh;
 }
 .didYouKnowMainHeading{
     font-size: 75px;
@@ -59,19 +65,22 @@
     .didYouKnowContainer{
         display: block;
         /* height: 300vh; after reviews size */
-        height: 250vh;
         width: 100vw;
-        margin: 0%;
     }
     .didYouKnowMainHeading{
         font-size: 28px;
     }
     .didYouKnowBlockLeft{
-        width: 100%;
+        width: auto;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .didYouKnowEachBlock{
-        width: 100%;
+        width: 80%;
     }
     .didYouKnowHeading{
         font-size: 16px;
@@ -89,9 +98,7 @@
 @media screen and (min-width:481px) and (max-width:780px) {
     .didYouKnowContainer{
         display: block;
-        height: 180vh;
         width: 100vw;
-        margin: 0%;
     }
     .didYouKnowMainHeading{
         font-size: 45px;
@@ -118,9 +125,7 @@
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
     .didYouKnowContainer{
-        height: 120vh;
         width: 100vw;
-        margin: 0%;
     }
     .didYouKnowMainHeading{
         font-size: 65px;

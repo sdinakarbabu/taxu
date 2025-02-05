@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     font-family: sans-serif;
-    width: 100vw;
     height: 65px;
 }
 .part-1{
@@ -65,7 +64,6 @@
     .part-1{
         font-size: 12px;
         /* background-color: beige; */
-        margin-left: -20px;
     }
     .part-2{
         font-size: 35px;

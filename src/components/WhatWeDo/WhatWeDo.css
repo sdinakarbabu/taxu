@@ -1,10 +1,14 @@
 .WhatWeDoSection{
-    height: 220vh;
+    /* height: 220vh; */
+    margin: 5rem 0;
+    height: auto;
+    overflow: hidden;
 }
 .WhatWeDoMainHeading{
     text-align: center;
     font-family: 'Nunito';
     font-size: 85px;
+    margin-bottom: 8rem;
 }
 
 #WhatWeDoEachBlock{
@@ -49,7 +53,7 @@
 
 @media screen and (min-width:300px) and (max-width:480px) {
     .WhatWeDoSection{
-        height: 220vh;
+        /* height: 220vh; */
     }
     .WhatWeDoMainHeading{
         font-size: 40px;
@@ -86,7 +90,7 @@
 
 @media screen and (min-width:481px) and (max-width:780px) {
     .WhatWeDoSection{
-        height: 220vh;
+        /* height: 220vh; */
     }
     .WhatWeDoMainHeading{
         font-size: 60px;
@@ -121,7 +125,7 @@
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
     .WhatWeDoSection{
-        height: 180vh;
+        /* height: 180vh; */
     }
     .WhatWeDoMainHeading{
         font-size: 80px;
