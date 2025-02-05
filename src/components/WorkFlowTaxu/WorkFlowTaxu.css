@@ -35,6 +35,8 @@
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: -20px 12px 15px rgb(141, 140, 140);
 }
 .eachLinkImageWorkFlow{
@@ -53,6 +55,7 @@
     font-family: "Lato";
     font-size: 16px;
     margin-top: 25px;
+    text-align: center;
     /* margin-left: 25px; */
 }
 @media screen and (min-width:300px) and (max-width:480px) {
