@@ -1,26 +1,27 @@
 .itrPlanContainer{
-    margin: 1rem 0 3rem 0; /* margin size */ 
+    margin: 5rem 0 3rem 0; /* margin size */
+    overflow: hidden; 
 }
 .itrPlansHeading{
     text-align: center;
     font-size: 55px;
-    margin: 6rem 1rem 1rem 1rem;
+    margin: 6rem 1rem 3rem 1rem;
 }
 .itrFlexBlock{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 35px;
+    align-items: center;
+    
 }
 .businessParagraph{
     font-size: 15px;
 }
 #BusinessRelatedSection{
-    height: 100vh;
+    margin: 12rem 0;
 }
 @media screen and (min-width:300px) and (max-width:480px) {
     .itrFlexBlock{
-        gap: 12px;
     }
     .itrPlansHeading{
         font-size: 32px;
@@ -29,7 +30,6 @@
         font-size: 8px;
     }
     #BusinessRelatedSection{
-        height: 120vh;
     }
 }
 
@@ -41,7 +41,6 @@
         font-size: 10px;
     }
     #BusinessRelatedSection{
-        height: 120vh;
     }
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
@@ -52,6 +51,5 @@
         font-size: 14px;
     }
     #BusinessRelatedSection{
-        height: 120vh;
     }
 }
