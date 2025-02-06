@@ -2,12 +2,11 @@
 
 #ContactFormSection{
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
   /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
   display: flex;
   justify-content: space-between;
   width: 80vw;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   margin: 4rem 6rem 4rem 9rem;
   border-radius: 30px;
   border: 6px solid #a4f795;
@@ -55,7 +54,6 @@
 @media screen and (min-width:300px) and (max-width:480px) {
   #ContactFormSection{
     width: 90%;
-    height: 180vh;
     left: 0;
     margin: 20px;
     flex-direction: column;
@@ -83,7 +81,6 @@
 
 @media screen and (min-width:481px) and (max-width:780px) {
   #ContactFormSection{
-    height: 160vh;
     flex-direction: column;
     align-items: center;
     margin: 4rem 6rem 4rem 5rem;
@@ -109,7 +106,6 @@
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
   #ContactFormSection{
-    height: 90vh;
     margin: 4rem 6rem 4rem 6rem;
   }
   .ContactFormLeftPart{

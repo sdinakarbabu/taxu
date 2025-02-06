@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Explore from './pages/Explore/Explore';
 import ContactForm from './pages/ContactForm/ContactForm';
 import Greetings from './components/Greetings/Greetings';
+import Google from './components/Google/Google';
 
 
 const App =()=> {  
@@ -14,7 +15,7 @@ const App =()=> {
         <Navbar/>
           <BrowserRouter>
             <Routes>
-              <Route path='/' element={<Greetings/>} />
+              <Route path='/' element={<Google/>} />
               <Route path='/home' element={<Home/>} />
               <Route path='/products' element={<Explore/>} />
               <Route path='/contact'  element={<ContactForm/>} />
