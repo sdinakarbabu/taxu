@@ -34,7 +34,7 @@ const WhatWeDo = () => {
         {
             WhatWeDoData.map((each)=>{
                 return(
-                    <div id='WhatWeDoEachBlock' style={{flexDirection:`${each.direction}`}}>
+                    <div id='WhatWeDoEachBlock' style={{flexDirection:`${each.direction}`}} key={each.heading}>
                         <div className='WhatWeDoBlockLeftPart'>
                             <h1 className='WhatWeDoHeading'>{each.heading}</h1>
                             <p className='WhatWeDoDescription'>{each.description}</p>

@@ -16,7 +16,7 @@ const Navbar = () => {
                 className={activeLink === 'home' ? 'item-headings active' : 'item-headings'}
                  onClick={()=>{
                   handleLinkClick('home')
-                  window.location.href="/"
+                  window.location.href="/home"
 
                  }}><p>Home</p></li>
                 <li className={activeLink === 'products' ? 'item-headings active' : 'item-headings'}

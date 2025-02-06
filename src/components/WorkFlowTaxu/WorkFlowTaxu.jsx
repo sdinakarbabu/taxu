@@ -40,7 +40,7 @@ const WorkFlowTaxu = () => {
             <ul className='workFlowContainer'>
                {
                 workFlowData.map((each)=>
-                    <li className='eachWorkFlowBlock'>
+                    <li className='eachWorkFlowBlock' key={each.heading}>
                         <img src={each.imageName} alt={each.imageName} className='eachLinkImageWorkFlow'/>
                         <h1 className='listPointHead'>{each.heading}</h1>
                         <p className='listPointdescription'>{each.description}</p>

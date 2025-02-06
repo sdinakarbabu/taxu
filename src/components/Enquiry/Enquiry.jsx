@@ -2,10 +2,6 @@ import React from 'react'
 import './Enquiry.css'
 // import logo from './expert.jpg'
 // import Itr from './Itrfiles.webp'
-import WhyToChoose from '../WhyToChoose/WhyToChoose';
-import WorkFlowTaxu from '../WorkFlowTaxu/WorkFlowTaxu';
-import InterestingFact from '../InterestingFact/InterestingFact';
-import WhatWeDo from '../WhatWeDo/WhatWeDo';
 
 const AccountingData = [
   {
@@ -28,14 +24,13 @@ const Enquiry = (props) => {
     setChange(!contactOn)
   }
   return (
-    <>
     <section className='EnquirySection' id='EnquirySection'>
       <h1 className='mainQuoteHeading'>"Simplify Your Finances with Expert Tax Filing and Accounting Services."</h1>
       <div className='accountingServicesContainer'>
         {
           AccountingData.map((ele)=>{
             return(
-              <div className='accountingServicesEachBlock'>
+              <div className='accountingServicesEachBlock' key={ele.heading}>
                 <h1 className='serviceHeading'>{ele.heading}</h1>
                 <p className='serviceDescription'>{ele.description}</p>
                 <a href={ele.link}><button className='serviceBtn'>{ele.btn}</button></a>
@@ -45,8 +40,6 @@ const Enquiry = (props) => {
         }
       </div> 
     </section>
-    <WhatWeDo/><WhyToChoose/> <WorkFlowTaxu/> <InterestingFact/>
-    </>
   )
 }
 
