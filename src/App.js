@@ -5,19 +5,11 @@ import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Explore from './pages/Explore/Explore';
 import ContactForm from './pages/ContactForm/ContactForm';
-import { useEffect, useState } from 'react';
 import Greetings from './components/Greetings/Greetings';
 
 
 const App =()=> {  
   const [dataFromProduct, setDataFromProduct] = useState(localStorage.getItem('text'));
-      useEffect(() => {
-        const timer = setTimeout(() => {
-          window.location.href = '/home';
-        }, 5000);
-        return () => clearTimeout(timer);
-      },[]);
-      
     return (
       <main className='main'>
         <Navbar/>
