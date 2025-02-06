@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './ContactForm.css'
 import contactImage from './Contact us-pana.png'
 
-const ContactForm = (props) => {
-    const {dataFromProduct} = props
+const ContactForm = () => {
     const [result, setResult] = useState("");
+    const [dataFromProduct, setDataFromProduct] = useState(localStorage.getItem('text'));
 
     const onSubmit = async (event) => {
         event.preventDefault();
