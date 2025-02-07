@@ -34,7 +34,7 @@ const itrPlaningData = [
   {
     name:"Capital gains",
     prices:{
-      currentPrice:"2,499",
+      currentPrice:"2499",
       previousPrice:"5000",
       discountPrice:"Save 50%"
     },
@@ -45,7 +45,7 @@ const itrPlaningData = [
   {
     name:"NRI/ Foreign Income",
     prices:{
-      currentPrice:"3,499",
+      currentPrice:"3499",
       previousPrice:"7000",
       discountPrice:"Save 50%"
     },
@@ -56,7 +56,7 @@ const itrPlaningData = [
   {
     name:"Business",
     prices:{
-      currentPrice:"4,999",
+      currentPrice:"4999",
       previousPrice:"10000",
       discountPrice:"Save 50%"
     },
@@ -67,7 +67,7 @@ const itrPlaningData = [
   {
     name:"Income from Trading",
     prices:{
-      currentPrice:"4,499",
+      currentPrice:"4499",
       previousPrice:"9000",
       discountPrice:"Save 50%"
     },

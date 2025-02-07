@@ -1,0 +1,79 @@
+
+.paymentLeftPart{
+    width: 100%;
+    font-family: 'Lato';
+    margin: auto;
+    padding: auto;
+}
+.paymentTaxuHeading{
+    font-size: 45px;
+    text-align: center;
+    display: none;
+}
+.orderDetailsHeading{
+    font-size: 26px;
+    margin-left: 6%;
+    font-weight: 900;
+}
+.horizontalTag{
+    padding: 2px;
+    border: none;
+    border-radius: 25px;
+    margin: 0%;
+    background-color: rgb(95, 101, 101);
+}
+.planHeading{
+    font-size: 32px;
+    font-weight: 800;
+    align-items: center;
+    margin-left: 10%;
+    letter-spacing: 2px;
+}
+.paymentDescription{
+    font-size: 28px;
+    font-weight: 400;
+    margin-left: 5%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.subHeading{
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 25px 0px;
+}
+.subHeadingValue{
+    margin: 26px 0px;
+    font-weight: 400;
+
+}
+.subHeadingValue,.forwardslash{
+    font-size: 18px;
+}
+.couponInput{
+    outline: none;
+    border: 1px solid #000;
+    height: 35px;
+    width: 380px;
+    border-radius: 8px;
+    margin-top: 26px;
+}
+.couponSubmit{
+    margin-top: 26px;
+    border: none;
+    background-color: rgb(91, 122, 215);
+    color: #fff;
+    padding: 6px 25px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.submitCheckout{
+    border: none;
+    background-color: rgb(91, 122, 215);
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 50px 0px;
+}
