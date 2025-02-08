@@ -43,10 +43,8 @@ const statesData = [
 const PaymentDetails = () => {
     const ProductData = JSON.parse(localStorage.getItem('text'));
     const price = parseFloat(ProductData.prices.currentPrice).toFixed(2);
-    const discount = parseFloat(ProductData.prices.currentPrice*0.05).toFixed(2);
-    const Amount = price-discount;
-    const gst =  parseFloat(Amount*0.18).toFixed(2);
-    const total = parseFloat(parseFloat(Amount)+parseFloat(gst)).toFixed(2);
+    const gst =  parseFloat(price*0.18).toFixed(2);
+    const total = parseFloat(parseFloat(price)+parseFloat(gst)).toFixed(2);
 
 
     const onSubmit = async (event) => {
@@ -86,14 +84,10 @@ const PaymentDetails = () => {
                 <div style={{display:'flex', justifyContent:'space-evenly', alignItems:'center'}}>
                     <div>
                         <p className='subHeading'>price</p>
-                        <p className='subHeading'>Discount 5%</p>
-                        <p className='subHeading'>amount</p>
                         <p className='subHeading'>gst@18%</p>
                     </div>
                     <div>
                         <p className='subHeadingValue'>{price}<span className='forwardslash'>/-</span></p>
-                        <p className='subHeadingValue'>{discount}<span className='forwardslash'>/-</span></p>
-                        <p className='subHeadingValue'>{Amount}<span className='forwardslash'>/-</span></p>
                         <p className='subHeadingValue'>{gst}<span className='forwardslash'>/-</span></p>
                     </div>
                 </div>

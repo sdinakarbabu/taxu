@@ -38,7 +38,7 @@ const ContactForm = () => {
         <div className='ContactFormRightPart'>
             <div style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
                 <h1 class="text"> Contact Us</h1>
-                <a href='/'><button type='button' className='btnContact'>Close</button></a>
+                <a href='/home'><button type='button' className='btnContact'>Close</button></a>
             </div>
             <form class="row g-3 needs-validation" novalidate onSubmit={onSubmit}>
                 <div class="col-md-7">

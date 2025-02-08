@@ -1,8 +1,12 @@
 .paymentDetailsSection{
     display: flex;
     justify-content: space-around;
-    margin: 8rem 25px;
+    margin: 4rem 10rem;
     gap: 5rem;
+    padding: 3rem 1rem;
+    border-radius: 30px;
+    border: 6px solid #a4f795;
+    box-shadow: -8px 5px 15px rgb(141, 140, 140);
 }
 .paymentLeftPart{
     width: 100%;
