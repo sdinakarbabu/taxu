@@ -1,4 +1,9 @@
-
+.paymentDetailsSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 8rem 25px;
+    gap: 5rem;
+}
 .paymentLeftPart{
     width: 100%;
     font-family: 'Lato';
@@ -51,6 +56,7 @@
 .subHeadingValue,.forwardslash{
     font-size: 18px;
 }
+
 .couponInput{
     outline: none;
     border: 1px solid #000;
@@ -62,7 +68,7 @@
 .couponSubmit{
     margin-top: 26px;
     border: none;
-    background-color: rgb(91, 122, 215);
+    background-color: rgb(71, 96, 174);
     color: #fff;
     padding: 6px 25px;
     border-radius: 15px;
@@ -76,4 +82,109 @@
     border-radius: 15px;
     text-transform: uppercase;
     margin: 50px 0px;
+}
+.btnPlaceOrder:hover{
+    background-color: rgb(60, 60, 148);
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .paymentDetailsSection{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .paymentLeftpart{
+        width:80%;
+    }
+    .horizontalTag{
+        padding: 0.8px;
+    }
+    .orderDetailsHeading{
+        font-size: 21px;
+    }
+    .planHeading{
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    .paymentDescription{
+        font-size: 16px;
+    }
+    .subHeading{
+        font-size: 14px;
+    }
+    .subHeadingValue{
+        font-size: 14px;
+    }
+    .couponInput{
+        width: 150px;
+    }
+    .couponSubmit{
+        padding: 2px auto;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .paymentDetailsSection{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .paymentLeftpart{
+        width:80%;
+    }
+    .horizontalTag{
+        padding: 0.8px;
+    }
+    .orderDetailsHeading{
+        font-size: 21px;
+    }
+    .planHeading{
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    .paymentDescription{
+        font-size: 16px;
+    }
+    .subHeading{
+        font-size: 14px;
+    }
+    .subHeadingValue{
+        font-size: 14px;
+    }
+    .couponInput{
+        width: 150px;
+    }
+    .couponSubmit{
+        padding: 2px auto;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .paymentLeftPart{
+        width: 180%;
+    }
+    .horizontalTag{
+        padding: 1.2px;
+    }
+    .orderDetailsHeading{
+        font-size: 21px;
+    }
+    .planHeading{
+        font-size: 21px;
+        margin-top: 25px;
+    }
+    .paymentDescription{
+        font-size: 18px;
+    }
+    .subHeading{
+        font-size: 16px;
+    }
+    .subHeadingValue{
+        font-size: 16px;
+    }
+    .couponInput{
+        width: 180px;
+    }
+    .couponSubmit{
+        padding: 3px auto;
+    }
 }
