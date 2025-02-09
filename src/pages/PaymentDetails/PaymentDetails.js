@@ -37,16 +37,14 @@ const statesData = [
     { "stateName": "Delhi" },
     { "stateName": "Puducherry" }
 ]
-  
 
 
 const PaymentDetails = () => {
-    const ProductData = JSON.parse(localStorage.getItem('text'));
+    const ProductData = JSON.parse(localStorage.getItem('texts'));
     const price = parseFloat(ProductData.prices.currentPrice).toFixed(2);
     const gst =  parseFloat(price*0.18).toFixed(2);
     const total = parseFloat(parseFloat(price)+parseFloat(gst)).toFixed(2);
-
-
+    var CouponApplied;
     const onSubmit = async (event) => {
         event.preventDefault();
         // setResult("Sending....");
@@ -92,13 +90,18 @@ const PaymentDetails = () => {
                     </div>
                 </div>
                 <hr className='horizontalTag'/>
-                <div style={{display:'flex', justifyContent:'space-evenly', alignItems:'center'}}>
+                <div style={{display:'flex', justifyContent:'space-evenly'}}>
                     <div>
-                        <input type='text' value='TAXU50' className='couponInput'/>
+                        <input type='text' className='couponInput' id='couponInput'/>
+                        <p style={{color:'green',fontWeight:'600', fontSize:'14px',marginLeft:'5px'}}>{CouponApplied}</p>
                         <p className='subHeading'>Total</p>
                     </div>
                     <div>
-                        <button type='button' className='couponSubmit btn btn-primary'>Apply</button>
+                        <button type='button' className='couponSubmit btn btn-primary' onClick={()=>{
+                            const couponInputEle = document.getElementById("couponInput").value;
+                            (couponInputEle === "TAXU50")?alert("Coupon Applied") : alert("Coupon Invalid");
+                            
+                        }}>Apply</button>
                         <p className='subHeadingValue'>{total}<span className='forwardslash'>/-</span></p>
                     </div>
                 </div>
@@ -112,6 +115,7 @@ const PaymentDetails = () => {
 
         </div>
         <div className='paymentRightPart'>
+            <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',marginRight:'35px'}}><p style={{fontWeight:'bold'}}>Shipping To: </p><button type='button' className='closePaymentBtn' onClick={()=> window.location.href='/products'}>Close</button></div>
             <form class="row g-3 needs-validation" novalidate onSubmit={onSubmit}>
                 <input type='text' name='Plan name' value={ProductData.name} style={{display:'none'}}/>
                 <input type='text' name='Amount paid' value={total} style={{display:'none'}} />

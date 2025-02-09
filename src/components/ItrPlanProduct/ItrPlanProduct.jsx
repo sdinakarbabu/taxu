@@ -32,7 +32,7 @@ const ItrPlanProduct = (props) => {
               </ul>
             </div>
             <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-              <a href='/payment'  onClick={()=>{localStorage.setItem('text',JSON.stringify(each))}}><button className='productBtn'>{each.btnName}</button></a>
+              <a href='/payment'  onClick={()=>{localStorage.setItem('texts',JSON.stringify(each))}}><button className='productBtn'>{each.btnName}</button></a>
             </div>
         </div>
     </li>

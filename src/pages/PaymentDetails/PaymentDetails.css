@@ -90,6 +90,17 @@
 .btnPlaceOrder:hover{
     background-color: rgb(60, 60, 148);
 }
+.closePaymentBtn{
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 3px 15px;
+    border: none;
+    font-size: 18px;
+}
+.closePaymentBtn:hover{
+    background-color: red;
+    color: #fff;
+}
 
 @media screen and (min-width:300px) and (max-width:480px) {
     .paymentDetailsSection{
