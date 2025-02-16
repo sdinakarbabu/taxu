@@ -92,12 +92,12 @@ const PaymentDetails = () => {
                 <hr className='horizontalTag'/>
                 <div style={{display:'flex', justifyContent:'space-evenly'}}>
                     <div>
-                        <input type='text' className='couponInput' id='couponInput'/>
+                        <input type='text' className='couponInput' id='couponInput' style={{display:'none'}}/>
                         <p style={{color:'green',fontWeight:'600', fontSize:'14px',marginLeft:'5px'}}>{CouponApplied}</p>
                         <p className='subHeading'>Total</p>
                     </div>
                     <div>
-                        <button type='button' className='couponSubmit btn btn-primary' onClick={()=>{
+                        <button type='button' className='couponSubmit btn btn-primary' style={{display:'none'}} onClick={()=>{
                             const couponInputEle = document.getElementById("couponInput").value;
                             (couponInputEle === "TAXU50")?alert("Coupon Applied") : alert("Coupon Invalid");
                             
@@ -175,7 +175,7 @@ const PaymentDetails = () => {
                     <div class="form-check">
                     <input class="form-check-input" style={{border:'2px solid rgb(91, 91, 254)'}} type="checkbox" value="" id="invalidCheck" required/>
                     <label class="form-check-label" for="invalidCheck" style={{fontWeight:'500', letterSpacing:'1px'}}>
-                        Agree to terms and conditions
+                        Agree that above details are correct
                     </label>
                     <div class="invalid-feedback" style={{fontWeight:'500', letterSpacing:'1px'}}>
                         You must agree before submitting.

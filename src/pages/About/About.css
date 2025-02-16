@@ -1,0 +1,39 @@
+.fqaContainer{
+    margin-top: 45px;
+}
+.FqaHeading{
+    text-align: left;
+    font-size: 48px;
+    font-family: 'Nunito';
+    margin-left: 8%;
+}
+.FqaBlock{
+    margin: 35px 5rem;
+    padding: 15px;
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .FqaBlock{
+        margin: 15px 5px;
+    }
+    .FqaHeading{
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .FqaBlock{
+        margin: 15px 1.5rem;
+    }
+    .FqaHeading{
+        font-size: 36px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .FqaBlock{
+        margin: 15px 4rem;
+    }
+    .FqaHeading{
+        font-size: 42px;
+    }
+}

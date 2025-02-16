@@ -1,0 +1,101 @@
+
+.dropdownEachBlock{
+    margin: 25px;
+    border-radius: 8px;
+    box-shadow: -2px 0.5px 8px #2a4695;
+    list-style-type: none;
+}
+.questionBLock{
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 35px;
+    font-family: 'Nunito';
+}
+.questionBLock>p{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.answerBlock{
+    padding: 35px 8px;
+    font-family: 'lato';
+
+}
+.answerBlock>p{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 4px 6% auto 55px;
+    letter-spacing: 3px;
+}
+.arrowMark{
+    font-weight: bold;
+    transform: rotate(90deg);
+    margin-right: 5px;
+    margin-top:8px;
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .dropdownEachBlock{
+        margin: 25px 0px;
+    }
+    .questionBLock{
+        margin: auto 8px;
+    }
+    .questionBLock>p{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .answerBlock{
+        padding: 0px 4px;
+        padding-bottom: 15px;
+    }
+    .answerBlock>p{
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .dropdownEachBlock{
+        margin: 25px 0px;
+    }
+    .questionBLock{
+        margin: auto 8px;
+    }
+    .questionBLock>p{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .answerBlock{
+        padding: 0px 4px;
+        padding-bottom: 15px;
+    }
+    .answerBlock>p{
+        font-size: 14px;
+        letter-spacing: 2.5px;
+        line-height: 35px;
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .dropdownEachBlock{
+        margin: 25px 0px;
+    }
+    .questionBLock{
+        margin: auto 8px;
+    }
+    .questionBLock>p{
+        font-size: 21px;
+        letter-spacing: 1px;
+    }
+    .answerBlock{
+        padding: 0px 4px;
+        padding-bottom: 15px;
+    }
+    .answerBlock>p{
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 40px;
+    }
+}

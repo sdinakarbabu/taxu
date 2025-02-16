@@ -31,6 +31,12 @@ const Navbar = () => {
                   window.location.href="/contact"
 
                  }}><p>Contact</p></li>
+                 <li className={activeLink === 'about' ? 'item-headings active' : 'item-headings'}
+                 onClick={()=>{
+                  handleLinkClick('about')
+                  window.location.href="/about"
+
+                 }}><p>About</p></li>
             </ul>
         </div>
         <div className='part-2'>Taxu</div>

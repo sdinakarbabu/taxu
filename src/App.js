@@ -7,6 +7,8 @@ import Explore from './pages/Explore/Explore';
 import ContactForm from './pages/ContactForm/ContactForm';
 import Greetings from './components/Greetings/Greetings';
 import PaymentDetails from './pages/PaymentDetails/PaymentDetails';
+import About from './pages/About/About';
+import Fqa from './components/Fqa/Fqa';
 // import Google from './components/Google/Google';
 
 
@@ -20,6 +22,7 @@ const App =()=> {
               <Route path='/home' element={<Home/>} />
               <Route path='/products' element={<Explore/>} />
               <Route path='/contact'  element={<ContactForm/>} />
+              <Route path='/about' element={<About/>} />
               <Route path='/payment' element={<PaymentDetails/>} />
             </Routes>
           </BrowserRouter>
