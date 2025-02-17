@@ -4,7 +4,7 @@
     justify-content: space-around;
     text-transform: uppercase;
 }
-a{
+.anchorTagListPoint{
     color: #000;
     text-decoration: none;
 }
@@ -20,9 +20,13 @@ a{
     font-size: 20px;
     font-family: "Lato";
     margin: 10px 0 0 0px;
+    
 }
-.inner-eachItem,a:hover{
-    color: blue;
+
+.eachListPoint:hover,.anchorTagListPoint:hover{
+    color: #ffffff;
+    background-color: green;
+    width: auto;
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {

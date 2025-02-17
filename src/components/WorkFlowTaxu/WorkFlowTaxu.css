@@ -32,7 +32,7 @@
 .eachWorkFlowBlock{
     list-style-type: none;
     /* width: 380px; */
-    padding: 15px;
+    padding: 18px;
     border: 4px solid #a4f795;
     border-radius: 30px;
     display: flex;
@@ -42,8 +42,8 @@
     box-shadow: -20px 12px 15px rgb(141, 140, 140);
 }
 .eachLinkImageWorkFlow{
-    height: 95px;
-    width: 40%;
+    height: auto;
+    width: 35%;
     /* background-color: aqua; */
 }
 .listPointHead{

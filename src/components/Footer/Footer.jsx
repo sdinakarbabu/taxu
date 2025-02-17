@@ -6,7 +6,7 @@ const data = [
         subList:[
             {
                 name:"About",
-                link:''
+                link:'about'
             },
             {
                 name:"Contact",
@@ -103,7 +103,7 @@ const Footer = () => {
                 <ul key={each.name}>
                     <li className='item-name'>{each.name}</li>
                     <ul>
-                        {each.subList.map((eachInner)=><li className='inner-eachItem' key={eachInner.name}><a href={`/${eachInner.link}`}>{eachInner.name}</a></li>)}
+                        {each.subList.map((eachInner)=><li className='inner-eachItem eachListPoint' key={eachInner.name}><a href={`/${eachInner.link}`} className='anchorTagListPoint'>{eachInner.name}</a></li>)}
                     </ul>
                 </ul>
             )

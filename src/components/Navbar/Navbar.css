@@ -25,21 +25,25 @@
 
 .part-1 > .nav-items{
     display: inline-flex;
-    gap: 35px;
+    gap: 0px;
 }
 .nav-items > .item-headings{
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     cursor: pointer;
+    font-size: 21px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .active {
     font-weight: bold;
-    color: #007bff; /* Highlight color */
+    color: green; /* Highlight color */
   }
 .item-headings:hover{
-    color: blue;
+    color: #fff;
+    background-color: green;
+    border-radius: 18px;
+   
     /* text-shadow: -1px 3px 2px #6578ba; */
 }
 .arrow-list{
@@ -75,7 +79,7 @@
     }
     
     .part-1 > .nav-items{
-        gap:5px;
+        gap:0px;
     }
     .reqBtn{
         width: 80px;
@@ -100,7 +104,7 @@
     }
     
     .part-1 > .nav-items{
-        gap:16px;
+        gap:0px;
     }
     .reqBtn{
         width: 80px;
@@ -124,7 +128,7 @@
     }
     
     .part-1 > .nav-items{
-        gap:25px;
+        gap:0px;
     }
     .reqBtn{
         width: 120px;
