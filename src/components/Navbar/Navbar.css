@@ -7,8 +7,9 @@
 .part-1{
     font-size: 23px;
     font-family: "Lato";
+    margin: 0px;
+    padding: 0px;
     margin-top: 30px;
-
 }
 .part-2{
     font-size: 65px;
@@ -24,16 +25,16 @@
 }
 
 .part-1 > .nav-items{
-    display: inline-flex;
-    gap: 0px;
+    display:flex;
+    gap: 23px;
 }
 .nav-items > .item-headings{
     list-style-type: none;
     cursor: pointer;
     font-size: 21px;
-    padding-top: 12px;
+    /* padding-top: 12px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; */
 }
 .active {
     font-weight: bold;
@@ -66,27 +67,27 @@
 
 
 @media screen and (min-width:300px) and (max-width:480px) {
+    .navbar-container{
+        flex-direction: column-reverse;
+        margin: 0%;
+        height: auto;
+    }
     .part-1{
         font-size: 8px;
-        margin-top: 23px;
-        /* background-color: beige; */
+        margin: 0%;
+    }
+    .part-1 > .nav-items{
+        justify-content: center;
+        gap: 26px;
     }
     .part-2{
         font-size: 28px;
-       letter-spacing: 8px;
+        text-align: center;
+        padding-left:25px;
+        margin: 10px 0;
     }
     .part-3{
-    }
-    
-    .part-1 > .nav-items{
-        gap:0px;
-    }
-    .reqBtn{
-        width: 80px;
-        height: 25px;
-        font-size: 8px;
-        margin-right: -40px;
-        margin-top: 15px;
+        display: none;
     }
 }
 
@@ -101,10 +102,14 @@
        letter-spacing: 8px;
     }
     .part-3{
+        display: block;
     }
     
     .part-1 > .nav-items{
-        gap:0px;
+        gap:15px;
+    }
+    .nav-items > .item-headings{
+        font-size: 12px;
     }
     .reqBtn{
         width: 80px;
@@ -128,7 +133,10 @@
     }
     
     .part-1 > .nav-items{
-        gap:0px;
+        gap:18px;
+    }
+    .nav-items > .item-headings{
+        font-size: 14px;
     }
     .reqBtn{
         width: 120px;
