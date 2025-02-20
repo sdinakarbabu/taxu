@@ -32,7 +32,8 @@
     font-weight: bold;
     transform: rotate(90deg);
     margin-right: 5px;
-    margin-top:8px;
+    height: 23px;
+    transition: transform 2s all;
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {
