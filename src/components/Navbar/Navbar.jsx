@@ -26,6 +26,12 @@ const Navbar = () => {
                   window.location.href="/products"
 
                  }}><p>Products</p></li>
+                 <li className={activeLink === 'about' ? 'item-headings active' : 'item-headings'}
+                 onClick={()=>{
+                  handleLinkClick('about')
+                  window.location.href="/about"
+
+                 }}><p>About</p></li>
                 <li className={activeLink === 'contact' ? 'item-headings active' : 'item-headings'}
                  onClick={()=>{
                   handleLinkClick('contact');

@@ -1,0 +1,262 @@
+
+.about-us-Block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 2rem 0 2rem;
+}
+.btn-AboutUs{
+    width: 180px;
+    align-self: center;
+    height: 55px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgb(91, 91, 254);
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    margin: 1rem 0 2rem 0;
+}
+.about-us-description{
+    line-height: 55px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.vision-block{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.vision-btn{
+    width: 180px;
+    align-self: center;
+    height: 55px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgb(91, 91, 254);
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    margin: 1rem 0 0 12rem;
+}
+.content-Block{
+    display: flex;
+    justify-content: space-around;
+}
+.vision-img{
+    height: 520px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.vision-content{
+    font-size: 23px;
+    margin: 5rem 3rem;
+    line-height: 45px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.vision-content{
+    list-style-type: none;
+    font-size: 26px;
+}
+.vision-Point-Block{
+    display: flex;
+    justify-content: center;
+}
+.arrowMark{
+    transform: rotate(0deg);
+    margin: 10px 8px 0 0;
+
+}
+.About-address-block{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.Address-block{
+    font-size: 21px;
+}
+.taxuPoint-block{
+    width: 75%;
+    margin-top: 3rem;
+}
+.vision-Point-Block{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1rem;
+}
+.external-social-link{
+    margin:  0 5px;
+}
+.vision-address-img{
+    height: 480px;
+}
+
+@media screen and (min-width:300px) and (max-width:480px) {
+    .about-us-description{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .vision-btn{
+        margin: 0;
+    }
+    .content-Block{
+        display: block;
+    }
+    .vision-block{
+        padding: 1rem;
+    }
+    .vision-img{
+        height: 520px;
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .vision-content{
+        margin: 0%;
+        padding: 0%;
+    }
+    .vision-Point-Block{
+        font-size: 14px;
+        line-height: 35px;
+        margin: 0 10px;
+    }
+    .arrowMark{
+        height: 15px;
+    }
+    .About-address-block{
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .taxuPoint-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        
+    }
+    .vision-address-img{
+        height: 320px;
+        width: 100%;
+    }
+    .taxu-description{
+        font-size: 18px;
+        margin: 1rem;
+        line-height: 35px
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+    .about-us-description{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .vision-btn{
+        margin: 0;
+    }
+    .content-Block{
+        display: block;
+    }
+    .vision-block{
+        padding: 1rem;
+    }
+    .vision-img{
+        height: 520px;
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .vision-content{
+        margin: 0%;
+        padding: 0%;
+    }
+    .vision-Point-Block{
+        font-size: 14px;
+        line-height: 35px;
+        margin: 0 10px;
+    }
+    .arrowMark{
+        height: 15px;
+    }
+    .About-address-block{
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .taxuPoint-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        
+    }
+    .vision-address-img{
+        height: 320px;
+        width: 100%;
+    }
+    .taxu-description{
+        font-size: 18px;
+        margin: 1rem;
+        line-height: 35px
+    }
+}
+@media screen and (min-width:781px) and (max-width:1024px) {
+    .about-us-description{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .vision-btn{
+        margin: 0;
+    }
+    .content-Block{
+        display: block;
+    }
+    .vision-block{
+        padding: 1rem;
+    }
+    .vision-img{
+        height: 620px;
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .vision-content{
+        margin: 0%;
+        padding: 0%;
+    }
+    .vision-Point-Block{
+        font-size: 21px;
+        line-height: 45px;
+        margin: 0 10px;
+    }
+    .arrowMark{
+        height: 25px;
+    }
+    .About-address-block{
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .taxuPoint-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+        
+    }
+    .vision-address-img{
+        height: 420px;
+        width: 100%;
+    }
+    .taxu-description{
+        font-size: 23px;
+        margin: 2rem;
+        line-height: 55px
+    }
+}
