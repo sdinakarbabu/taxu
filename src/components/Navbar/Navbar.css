@@ -1,8 +1,10 @@
 .navbar-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: sans-serif;
-    height: 65px;
+    height: auto;
+    padding: 0 3rem;
 }
 .part-1{
     font-size: 23px;
@@ -12,16 +14,14 @@
     margin-top: 30px;
 }
 .part-2{
-    font-size: 65px;
+    font-size: 48px;
     letter-spacing: 8px;
     font-weight: bold;
     /* width: 20%; */
     /* background-color: red; */
-    margin-top: 10px;
     font-family: 'Cinzel';
 }
 .part-3{
-    margin-right: 60px;
 }
 
 .part-1 > .nav-items{
@@ -55,36 +55,34 @@
 .reqBtn{
     outline: none;
     width: 180px;
-    height: 55px;
+    height: 45px;
     border: none;
     color: #ffffff;
     font-size: 18px;
     border-radius: 8px;
     background-color: rgb(91, 91, 254);
-    margin-top: 30px;
     font-family: "Roboto Mono";
 }
 
 
 @media screen and (min-width:300px) and (max-width:480px) {
     .navbar-container{
-        flex-direction: column-reverse;
-        margin: 0%;
-        height: auto;
+        flex-direction: column;
     }
     .part-1{
         font-size: 8px;
         margin: 0%;
+        padding: 0%;
+        width: 100vw;
+        margin-top: 8px;
     }
     .part-1 > .nav-items{
         justify-content: center;
-        gap: 26px;
     }
     .part-2{
         font-size: 28px;
         text-align: center;
-        padding-left:25px;
-        margin: 10px 0;
+        margin-left: 25px;
     }
     .part-3{
         display: none;
@@ -94,11 +92,9 @@
 @media screen and (min-width:481px) and (max-width:780px) {
     .part-1{
         font-size: 16px;
-        /* background-color: beige; */
-        /* margin-left: -20px; */
     }
     .part-2{
-        font-size: 38px;
+        font-size: 32px;
        letter-spacing: 8px;
     }
     .part-3{
@@ -112,18 +108,14 @@
         font-size: 12px;
     }
     .reqBtn{
-        width: 80px;
+        width: 95px;
         height: 28px;
-        font-size: 10px;
-        margin-right: -40px;
-        margin-top: 23px;
+        font-size: 8px;
     }
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
     .part-1{
         font-size: 18px;
-        /* background-color: beige; */
-        /* margin-left: -20px; */
     }
     .part-2{
         font-size: 45px;
@@ -133,16 +125,15 @@
     }
     
     .part-1 > .nav-items{
-        gap:18px;
+        gap:28px;
     }
     .nav-items > .item-headings{
         font-size: 14px;
     }
     .reqBtn{
-        width: 120px;
+        width: 140px;
         height: 45px;
-        font-size: 14px;
-        margin-right: -40px;
-        margin-top: 23px;
+        font-size: 12px;
+
     }
 }

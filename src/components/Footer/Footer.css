@@ -1,7 +1,21 @@
 .footerSection{
+    background-color: aliceblue;
+    margin: 0%;
+    padding: 1rem 2rem;
+}
+.taxu-part-block{
+    margin-bottom: 1rem;
+}
+.taxu-heading-part{
+    font-family: 'Cinzel';
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+.footerLinks{
     /* margin-top: 30px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-transform: uppercase;
 }
 .anchorTagListPoint{
@@ -30,7 +44,10 @@
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {
-    .footerSection{
+    .taxu-heading-part{
+        font-size: 36px;
+    }
+    .footerLinks{
         /* margin-top: 30px; */
         display: flex;
         flex-direction: column;
@@ -47,7 +64,10 @@
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-    .footerSection{
+    .taxu-heading-part{
+        font-size: 38px;
+    }
+    .footerLinks{
         /* margin-top: 30px; */
         display: flex;
         flex-direction: column;

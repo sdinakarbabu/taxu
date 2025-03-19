@@ -98,16 +98,21 @@ const data = [
 const Footer = () => {
   return (
     <section className='footerSection'>
+        <div className='taxu-part-block'>
+            <h1 className='taxu-heading-part'>Taxu</h1>
+        </div>
+       <div className='footerLinks' >
         {data.map((each)=>{
-            return(
-                <ul key={each.name}>
-                    <li className='item-name'>{each.name}</li>
-                    <ul>
-                        {each.subList.map((eachInner)=><li className='inner-eachItem eachListPoint' key={eachInner.name}><a href={`/${eachInner.link}`} className='anchorTagListPoint'>{eachInner.name}</a></li>)}
+                return(
+                    <ul key={each.name}>
+                        <li className='item-name'>{each.name}</li>
+                        <ul>
+                            {each.subList.map((eachInner)=><li className='inner-eachItem eachListPoint' key={eachInner.name}><a href={`/${eachInner.link}`} className='anchorTagListPoint'>{eachInner.name}</a></li>)}
+                        </ul>
                     </ul>
-                </ul>
-            )
-        })}
+                )
+            })}
+       </div>
            
     </section>
   )
