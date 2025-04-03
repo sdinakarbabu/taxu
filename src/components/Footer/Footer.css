@@ -11,6 +11,11 @@
     font-weight: bold;
     letter-spacing: 8px;
 }
+.logo-image-footer{
+    height: 95px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
 .footerLinks{
     /* margin-top: 30px; */
     display: flex;

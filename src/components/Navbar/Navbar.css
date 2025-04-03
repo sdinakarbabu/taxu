@@ -21,6 +21,10 @@
     /* background-color: red; */
     font-family: 'Cinzel';
 }
+.logo-image{
+    height:65px ;
+    cursor: pointer;
+}
 .part-3{
 }
 

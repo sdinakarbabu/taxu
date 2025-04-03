@@ -26,11 +26,11 @@ const Enquiry = (props) => {
   return (
     <section className='EnquirySection' id='EnquirySection'>
       <h1 className='mainQuoteHeading'>"Simplify Your Finances with Expert Tax Filing and Accounting Services."</h1>
-      <div className='accountingServicesContainer'>
+      <div className='accountingServicesContainer col-12'>
         {
           AccountingData.map((ele)=>{
             return(
-              <div className='accountingServicesEachBlock' key={ele.heading}>
+              <div className='accountingServicesEachBlock col-10 col-md-10 col-lg-5' key={ele.heading}>
                 <h1 className='serviceHeading'>{ele.heading}</h1>
                 <p className='serviceDescription'>{ele.description}</p>
                 <a href={ele.link}><button className='serviceBtn'>{ele.btn}</button></a>

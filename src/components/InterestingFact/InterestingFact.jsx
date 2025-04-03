@@ -6,9 +6,9 @@ const InterestingFactData = {
 }
 const InterestingFact = () => {
   return (
-    <div className='InterestingFactSection'>
-        <h1 className='InterestingFactHeading'>{InterestingFactData.heading}</h1>
-        <p className='InterestingFactDescription'>{InterestingFactData.description}</p>
+    <div className='InterestingFactSection col-12'>
+        <h1 className='InterestingFactHeading col-11 col-md-8 col-lg-9'>{InterestingFactData.heading}</h1>
+        <p className='InterestingFactDescription col-10 col-lg-11'>{InterestingFactData.description}</p>
     </div>
   )
 }

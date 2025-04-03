@@ -22,12 +22,12 @@ const WhyToChoose = () => {
   return (
     <section className='didYouKnowSection' id='didYouKnowSection'>
       <h1 className='didYouKnowMainHeading'>Why Choose Taxu?</h1>
-        <div className='didYouKnowContainer'>
-          <ul className='didYouKnowBlockLeft'>
+        <div className='didYouKnowContainer col-12'>
+          <ul className='didYouKnowBlockLeft col-12 col-xl-6'>
             {
               listPoints.map((each)=> {
                 return(
-                  <li key={each.heading} className='didYouKnowEachBlock'>
+                  <li key={each.heading} className='didYouKnowEachBlock col-10 col-md-5'>
                     <h1 className='didYouKnowHeading'>{each.heading}</h1>
                     <p className='didYouKnowDescription'>{each.description}</p>
                   </li>
@@ -35,10 +35,10 @@ const WhyToChoose = () => {
               })
             }
           </ul>
-          <div className='didYouKnowBlockRight'>
+          <div className='didYouKnowBlockRight col-12 col-xl-6'>
             Trusted By Many Customers Reviews
-            {/* <img src='#' alt='didYouKnow-image' className='didYouKnowImage'/> */}
-        </div>
+            <img src='#' alt='didYouKnow-image' className='didYouKnowImage'/>
+          </div>
         </div>
     </section>
   )

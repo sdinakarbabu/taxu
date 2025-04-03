@@ -1,5 +1,4 @@
 .WhatWeDoSection{
-    /* height: 220vh; */
     margin: 5rem 0;
     height: auto;
     overflow: hidden;
@@ -12,27 +11,21 @@
 }
 
 #WhatWeDoEachBlock{
-    display: flex;
-    flex-direction: row;
+    display: flex; 
     justify-content: space-between;
-    align-items: center;
-    gap: 65px;
-    margin: 65px 65px;
+    margin: 0 15px;
 }
 .WhatWeDoBlockLeftPart{
     height: 420px;
-    width: 50%;
 }
 .WhatWeDoHeading{
     font-size: 55px;
-    margin: 15px;
     font-family: 'Cinzel';
 }
 .WhatWeDoDescription{
     font-family: 'Lato';
     font-size: 26px;
     line-height: 45px;
-    margin: 35px;
 }
 .WhatWeDoBtn{
     background-color: transparent;
@@ -48,26 +41,18 @@
 }
 .WhatWeDoImage{
     height: 350px;
-    width: 420px;
 }
 
 @media screen and (min-width:300px) and (max-width:480px) {
-    .WhatWeDoSection{
-        /* height: 220vh; */
-    }
     .WhatWeDoMainHeading{
         font-size: 40px;
     }
     
-    #WhatWeDoEachBlock{
-        margin: 65px 15px;
-    }
     .WhatWeDoBlockLeftPart{
         height: 350px;
     }
     .WhatWeDoHeading{
         font-size: 16px;
-        margin: 15px;
     }
     .WhatWeDoDescription{
         font-size: 12px;
@@ -79,19 +64,13 @@
         height: 35px;
         font-size: 14px;
     }
-    .WhatWeDoBlockRightPart{
-    }
     .WhatWeDoImage{
         height: 180px;
-        width: 120px;
     }
     
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-    .WhatWeDoSection{
-        /* height: 220vh; */
-    }
     .WhatWeDoMainHeading{
         font-size: 60px;
     }
@@ -116,17 +95,12 @@
         height: 35px;
         font-size: 16px;
     }
-    .WhatWeDoBlockRightPart{
-    }
     .WhatWeDoImage{
         height: 280px;
         width: 250px;
     }
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
-    .WhatWeDoSection{
-        /* height: 180vh; */
-    }
     .WhatWeDoMainHeading{
         font-size: 80px;
     }
@@ -154,4 +128,4 @@
         height: 350px;
         width: 280px;
     }
-}
+} 

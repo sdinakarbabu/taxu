@@ -9,7 +9,7 @@ import instagram from '../../assests/aboutPage/Instagram.png'
 import twitter from '../../assests/aboutPage/twitter.png'
 import target from '../../assests/aboutPage/target.png'
 
-import taxu from '../../assests/aboutPage/WhatsApp Image 2025-02-04 at 21.50.00.jpeg'
+import taxu from '../../assests/taxu.jpeg'
 
 
 const About = () => {

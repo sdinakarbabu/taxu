@@ -13,12 +13,12 @@ const Fqa = (props) => {
         setAnswer(!answer)
     }
   return (
-    <li className='dropdownEachBlock'>
-        <div className='questionBLock' onClick={displayAnswer}>
-            <p style={{textAlign:'left',padding:'10px 0 0 15px'}}>{ques}</p>
+    <li className='dropdownEachBlock col-10 col-xl-7'>
+        <div className='questionBLock col-12' onClick={displayAnswer}>
+            <p className='col-10' style={{textAlign:'left',padding:'10px 0 0 15px'}}>{ques}</p>
             <img src={downArrow} alt='down-arrow' className='arrowMark' style={(answer)?{transform: 'rotate(0deg)'}: {transform: 'rotate(180deg)'}} />
         </div>
-        <div className='answerBlock' style={(answer)?displayNone:{}}> 
+        <div className='answerBlock col-12' style={(answer)?displayNone:{}}> 
             <p>{ans}</p>
         </div>
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css';
+import logoTaxu from '../../assests/taxu.jpeg'
+
 const data = [
     {
         name:"Quick Links",
@@ -99,7 +101,8 @@ const Footer = () => {
   return (
     <section className='footerSection'>
         <div className='taxu-part-block'>
-            <h1 className='taxu-heading-part'>Taxu</h1>
+            <img src={logoTaxu} alt='taxu logo' className='logo-image-footer' />
+            <span className='taxu-heading-part d-none'>Taxu</span>
         </div>
        <div className='footerLinks' >
         {data.map((each)=>{

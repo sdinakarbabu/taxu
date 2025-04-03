@@ -8,7 +8,6 @@
 }
 .didYouKnowContainer{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .didYouKnowMainHeading{
@@ -18,25 +17,21 @@
     margin: 25px 0px 75px 0px;
 }
 .didYouKnowBlockLeft{
-    width: 60%;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Lato';
 }
 
 .didYouKnowEachBlock{
-    /* background-color: rgb(130, 130, 242); */
     color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 320px;
-    width: 40%;
     padding: 15px 35px;
     border-radius: 40px;
-    margin: 10px 15px;
-    /* box-shadow: -2px 0.5px 8px #000; */
+    margin: 10px 20px;
     border: 4px solid #a4f795;
     box-shadow: -5px 8px 10px rgb(141, 140, 140);
 }
@@ -55,7 +50,6 @@
 .didYouKnowBlockRight{
     background-color: rgb(119, 155, 155);
     height: 380px;
-    width: 40%;
     text-align: center;
     font-size: 25px;
     display: none;   /** trusted content box */
@@ -64,23 +58,9 @@
 @media screen and (min-width:300px) and (max-width:480px) {
     .didYouKnowContainer{
         display: block;
-        /* height: 300vh; after reviews size */
-        width: 100vw;
     }
     .didYouKnowMainHeading{
         font-size: 28px;
-    }
-    .didYouKnowBlockLeft{
-        width: auto;
-        padding: 0%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .didYouKnowEachBlock{
-        width: 80%;
     }
     .didYouKnowHeading{
         font-size: 16px;
@@ -96,20 +76,8 @@
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-    .didYouKnowContainer{
-        display: block;
-        width: 100vw;
-    }
     .didYouKnowMainHeading{
         font-size: 45px;
-    }
-    .didYouKnowBlockLeft{
-        width: 100%;
-        display: flex;
-    }
-    
-    .didYouKnowEachBlock{
-        width: 45%;
     }
     .didYouKnowHeading{
         font-size: 16px;
@@ -118,25 +86,16 @@
         font-size: 12px;
         line-height: 30px;
     }
-    
-    .didYouKnowBlockRight{
-        width: 100%;
-    }   
+    .didYouKnowContainer{
+        display: block;
+    }
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
-    .didYouKnowContainer{
-        width: 100vw;
-    }
     .didYouKnowMainHeading{
         font-size: 65px;
     }
     .didYouKnowBlockLeft{
-        width: 60%;
         display: flex;
-    }
-    
-    .didYouKnowEachBlock{
-        width: 40%;
     }
     .didYouKnowHeading{
         font-size: 16px;
@@ -145,8 +104,7 @@
         font-size: 10px;
         line-height: 25px;
     }
-    
-    .didYouKnowBlockRight{
-        width: 45%;
-    } 
+    .didYouKnowContainer{
+        display: block;
+    }
 }

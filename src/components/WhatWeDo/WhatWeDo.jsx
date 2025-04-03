@@ -35,14 +35,14 @@ const WhatWeDo = () => {
             WhatWeDoData.map((each)=>{
                 return(
                     <div id='WhatWeDoEachBlock' style={{flexDirection:`${each.direction}`}} key={each.heading}>
-                        <div className='WhatWeDoBlockLeftPart'>
+                        <div className='WhatWeDoBlockLeftPart col-5 col-md-6 col-lg-7'>
                             <h1 className='WhatWeDoHeading'>{each.heading}</h1>
                             <p className='WhatWeDoDescription'>{each.description}</p>
                             <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
                                 <button className='WhatWeDoBtn' style={{display:'none'}}>{each.btn}</button>
                             </div>
                         </div>
-                        <div className='WhatWeDoBlockRightPart'>
+                        <div className='WhatWeDoBlockRightPart col-6 col-md-4 col-lg-4 col-xl-3'>
                             <figure>
                                 <img src={each.image} alt='Gst filling' className='WhatWeDoImage'/>
                             </figure>

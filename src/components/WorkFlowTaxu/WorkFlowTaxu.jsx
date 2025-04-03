@@ -35,12 +35,11 @@ const WorkFlowTaxu = () => {
   return (
     <section className='WorkFlowTaxuSection' id='WorkFlowTaxuSection'>
         <h1 className='workFlowHeading'>How It works</h1>
-        <p className='workFlowParagraph' style={{display:'none'}}>4 Simple-steps to e-file your <span>Income Tax Returns</span></p>
-        <div className='flowOfProcessBlock'>
-            <ul className='workFlowContainer'>
+        <div className='flowOfProcessBlock col-12'>
+            <ul className='workFlowContainer col-12 m-0'>
                {
                 workFlowData.map((each)=>
-                    <li className='eachWorkFlowBlock' key={each.heading}>
+                    <li className='eachWorkFlowBlock col-10 col-md-5 col-xl-4' key={each.heading}>
                         <img src={each.imageName} alt={each.imageName} className='eachLinkImageWorkFlow'/>
                         <h1 className='listPointHead'>{each.heading}</h1>
                         <p className='listPointdescription'>{each.description}</p>

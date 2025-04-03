@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import './Navbar.css'
+import logoTaxu from '../../assests/taxu.jpeg'
+
+
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState(
     (localStorage.getItem('navLink') === null)?localStorage.setItem('navLink','home'):localStorage.getItem('navLink')
@@ -10,7 +13,10 @@ const Navbar = () => {
   };
   return (
     <section className='navbar-container'>
-        <div className='part-2'>Taxu</div>
+        <div className='part-2'>
+          <img src={logoTaxu} alt='taxu logo' className='logo-image' />
+          <span className='d-none'>Taxu</span>
+        </div>
         <div className='part-1'> 
             <ul className='nav-items'>
                 <li

@@ -49,7 +49,7 @@ const Home = () => {
         </div> */}
         <div className='fqaContainer'>
           <h1 className='FqaHeading'>FQA's</h1>
-          <ul className='FqaBlock'>
+          <ul className='FqaBlock col-12'>
             {
               FqasData.map(element => {
               return <Fqa ques={element.question} ans={element.answer}  key={element.question}/>
