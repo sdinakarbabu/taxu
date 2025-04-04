@@ -18,10 +18,8 @@
     font-family: 'Cinzel';
 }
 .logo-image{
-    height:65px ;
+    height:90px ;
     cursor: pointer;
-}
-.part-3{
 }
 
 .part-1 > .nav-items{
@@ -81,6 +79,9 @@
     .part-3{
         display: none;
     }
+    .logo-image{
+        height: 65px;
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
@@ -106,6 +107,9 @@
         height: 28px;
         font-size: 8px;
     }
+    .logo-image{
+        height: 60px;
+    }
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
     .part-1{
@@ -114,8 +118,6 @@
     .part-2{
         font-size: 45px;
        letter-spacing: 8px;
-    }
-    .part-3{
     }
     
     .part-1 > .nav-items{
@@ -129,5 +131,8 @@
         height: 45px;
         font-size: 12px;
 
+    }
+    .logo-image{
+        height: 85px;
     }
 }

@@ -40,10 +40,15 @@
     margin: 10px 0 0 0px;
     
 }
-
+.eachListPoint{
+    border-radius: 15px;
+    padding: 3px 1rem;
+}
 .eachListPoint:hover,.anchorTagListPoint:hover{
-    color: #000;
-    background-color: #a4f795;
+    .anchorTagListPoint{
+        color: #fff;
+    }
+    background-color: green;
     width: auto;
 }
 
@@ -87,5 +92,20 @@
     }
 }
 @media screen and (min-width:781px) and (max-width:1024px) {
-    
+    .footerSection{
+        position: relative;
+    }
+    .taxu-part-block{
+        position:absolute;
+        top: 12rem;
+    }
+}
+@media screen and (min-width:1025px){
+    .footerSection{
+        position: relative;
+    }
+    .taxu-part-block{
+        position:absolute;
+        top: 12rem;
+    }
 }

@@ -12,9 +12,9 @@ const Navbar = () => {
     setActiveLink(link);
   };
   return (
-    <section className='navbar-container'>
+    <section className='navbar-container' id='HomeBar'>
         <div className='part-2'>
-          <img src={logoTaxu} alt='taxu logo' className='logo-image' />
+          <img src={logoTaxu} alt='taxu logo' className='logo-image' onClick={()=> window.location.href="/home" } />
           <span className='d-none'>Taxu</span>
         </div>
         <div className='part-1'> 

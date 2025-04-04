@@ -101,7 +101,15 @@ const Footer = () => {
   return (
     <section className='footerSection'>
         <div className='taxu-part-block'>
-            <img src={logoTaxu} alt='taxu logo' className='logo-image-footer' />
+            <img src={logoTaxu} alt='taxu logo' className='logo-image-footer' onClick={()=> {
+                window.location.href="/home";
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                });
+                localStorage.setItem('navLink','home');
+            }} />
             <span className='taxu-heading-part d-none'>Taxu</span>
         </div>
        <div className='footerLinks' >
