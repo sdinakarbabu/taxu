@@ -1,18 +1,13 @@
 .paymentDetailsSection{
-    display: flex;
-    justify-content: space-around;
-    margin: 4rem 15rem;
-    gap: 5rem;
-    padding: 3rem 1rem;
+
+    padding: 2rem 1rem;
     border-radius: 30px;
     border: 6px solid #a4f795;
     box-shadow: -8px 5px 15px rgb(141, 140, 140);
 }
 .paymentLeftPart{
-    width: 100%;
     font-family: 'Lato';
-    margin: auto;
-    padding: auto;
+
 }
 .paymentTaxuHeading{
     font-size: 52px;
@@ -21,8 +16,8 @@
     display: block;
 }
 .paymentContainer{
-    margin: 5px 25px;
-    padding: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 21px;
     border-radius: 30px;
     border: 6px solid #a4f795;
     box-shadow: -8px 5px 15px rgb(141, 140, 140);
@@ -30,36 +25,32 @@
 }
 .orderDetailsHeading{
     font-size: 23px;
-    margin-left: 6%;
     font-weight: 900;
 }
 .horizontalTag{
     padding: 2px;
     border: none;
     border-radius: 25px;
-    margin: 0%;
     background-color: rgb(95, 101, 101);
 }
 .planHeading{
     font-size: 23px;
     font-weight: 600;
-    align-items: center;
-    margin-left: 10%;
+    text-align: center;
     letter-spacing: 2px;
 }
 .paymentDescription{
     font-size: 26px;
     font-weight: 400;
-    margin-left: 5%;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 .subHeading{
-    font-size: 21px;
+    font-size: 20px;
     font-weight:600;
     text-transform: uppercase;
     text-align: left;
-    margin: 25px 0px;
+    margin-top: 21px;
 }
 .subHeadingValue{
     margin: 26px 0px;
@@ -110,7 +101,6 @@
     background-color: red;
     color: #fff;
 }
-
 @media screen and (min-width:300px) and (max-width:480px) {
     .paymentDetailsSection{
         display: flex;
@@ -150,23 +140,14 @@
     .couponSubmit{
         padding: 2px auto;
     }
+    .paymentRightPart{
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:780px) {
-    .paymentDetailsSection{
-        display: flex;
-        flex-direction: column;
-        margin: 65px;
-    }
-    .paymentLeftpart{
-        width:80%;
-    }
     .paymentTaxuHeading{
         font-size: 58px;
-    }
-    .paymentContainer{
-        margin: 5px 75px;
-        margin-top: 25px;
     }
     .horizontalTag{
         padding: 0.8px;
@@ -193,14 +174,12 @@
     .couponSubmit{
         padding: 2px auto;
     }
+    .paymentRightPart{
+        margin-top: 3rem;
+    }
 }
+
 @media screen and (min-width:781px) and (max-width:1024px) {
-    .paymentDetailsSection{
-        margin: 75px;
-    }
-    .paymentLeftPart{
-        width: 180%;
-    }
     .horizontalTag{
         padding: 1.2px;
     }
@@ -229,4 +208,4 @@
     .couponSubmit{
         padding: 3px auto;
     }
-}
+} 
